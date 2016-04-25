@@ -7,6 +7,7 @@
 //
 
 #import "GWThemeManager.h"
+#import "GWTabBarManager.h"
 
 @interface GWThemeManager ()
 
@@ -15,6 +16,9 @@
 
 //主题包数组
 @property (nonatomic, strong) NSArray *themeArr;
+
+//主题包样式配色
+@property (nonatomic, strong) NSArray *themeColor;
 
 @end
 
@@ -32,21 +36,31 @@
     return _themeArr;
 }
 
+- (NSArray *)themeColor
+{
+    if (!_themeColor) {
+        _themeColor = @[[UIColor redColor],[UIColor colorWithRed:1 green:0 blue:156 / 255.0 alpha:1.0],[UIColor blueColor]];
+    }
+    return _themeColor;
+}
+
 static GWThemeManager *themeManager;
 
-+ (instancetype)GWThemeManager
++ (instancetype)shareThemeManager
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         themeManager = [[GWThemeManager alloc] init];
     });
+    [themeManager initCurrentTheme];
+//    [themeManager setupThemeStyle];
     return themeManager;
 }
 
 /**
  *  初始化主题
  */
-- (void)intiCurrentTheme
+- (void)initCurrentTheme
 {
     NSInteger type = [self getThemeType];
     [self setTHemeType:type];
@@ -82,6 +96,16 @@ static GWThemeManager *themeManager;
     return [UIImage imageNamed:@""];
 }
 
+/**
+ *  获取当前tabBar的tintColor
+ *
+ *  @return <#return value description#>
+ */
+- (UIColor *)themeTintColor
+{
+    return self.themeColor[[self getThemeType]];
+}
+
 //获取当前主题iD
 - (NSInteger)getThemeType
 {
@@ -95,6 +119,35 @@ static GWThemeManager *themeManager;
     kUserDefaults
     [userDefaults setValue:[NSString stringWithFormat:@"%ld",type] forKey:@"themeType"];
     [userDefaults synchronize];
+}
+
+/**
+ * 配置样式
+ */
+- (void)setupThemeStyle
+{
+    [self changeTabBarTintColor];
+    [self changeNavBarBackgroundImage];
+}
+
+/**
+ *  改变导航栏的背景色
+ */
+- (void)changeNavBarBackgroundImage
+{
+    UITabBarController *tabBarController = [GWTabBarManager shareTabBarManager].tabBarController;
+    for (GWNavigationController *vigationController in tabBarController.viewControllers) {
+        [vigationController setNavigationBarBackgroundImage];
+    }
+}
+
+/**
+ *  改变tabBar的tintColor
+ */
+- (void)changeTabBarTintColor
+{
+    UITabBarController *tabBarController = [GWTabBarManager shareTabBarManager].tabBarController;
+    tabBarController.tabBar.tintColor = [[GWThemeManager shareThemeManager] themeTintColor];
 }
 
 

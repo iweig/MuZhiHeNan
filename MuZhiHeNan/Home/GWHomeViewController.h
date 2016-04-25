@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GWSubscriberViewController : UIViewController
+@interface GWHomeViewController : GWBaseViewController
 
 @end

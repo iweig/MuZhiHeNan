@@ -13,4 +13,10 @@
 
 @property (nonatomic, strong) UITabBarController *tabBarController;
 
++ (instancetype)shareTabBarManager;
+
+- (void)setupTabBar:(UIWindow *)window;
+
+- (void)tabBarHindden:(BOOL)isHidden;
+
 @end

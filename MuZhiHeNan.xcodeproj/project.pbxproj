@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0414851CCDC43300235F50 /* GWBundleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0414841CCDC43300235F50 /* GWBundleManager.m */; };
+		8D0EF7241CCDEC3800C8EFC0 /* GWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7231CCDEC3800C8EFC0 /* GWNavigationController.m */; };
+		8D0EF7271CCDF55300C8EFC0 /* GWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7261CCDF55300C8EFC0 /* GWBaseViewController.m */; };
+		8D0EF72A1CCE0C6500C8EFC0 /* GWCustonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */; };
 		C41733811CC91F31000BBBD8 /* NSArray+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733581CC91F31000BBBD8 /* NSArray+LYAdd.m */; };
 		C41733821CC91F31000BBBD8 /* NSBundle+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417335A1CC91F31000BBBD8 /* NSBundle+LYAdd.m */; };
 		C41733831CC91F31000BBBD8 /* NSData+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417335C1CC91F31000BBBD8 /* NSData+LYAdd.m */; };
@@ -25,7 +29,7 @@
 		C41733901CC91F31000BBBD8 /* UIImage+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417337C1CC91F31000BBBD8 /* UIImage+LYAdd.m */; };
 		C41733911CC91F31000BBBD8 /* UITextField+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417337E1CC91F31000BBBD8 /* UITextField+LYAdd.m */; };
 		C41733921CC91F31000BBBD8 /* UIView+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733801CC91F31000BBBD8 /* UIView+LYAdd.m */; };
-		C41733A11CC923DA000BBBD8 /* GWSubscriberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733A01CC923DA000BBBD8 /* GWSubscriberViewController.m */; };
+		C41733A11CC923DA000BBBD8 /* GWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733A01CC923DA000BBBD8 /* GWHomeViewController.m */; };
 		C41733A41CC9240C000BBBD8 /* GWHotNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733A31CC9240C000BBBD8 /* GWHotNewsViewController.m */; };
 		C41733A81CC9241F000BBBD8 /* GWMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733A61CC9241F000BBBD8 /* GWMeViewController.m */; };
 		C41733A91CC9241F000BBBD8 /* GWMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41733A71CC9241F000BBBD8 /* GWMeViewController.xib */; };
@@ -46,6 +50,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D0414831CCDC43300235F50 /* GWBundleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWBundleManager.h; sourceTree = "<group>"; };
+		8D0414841CCDC43300235F50 /* GWBundleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWBundleManager.m; sourceTree = "<group>"; };
+		8D0EF7221CCDEC3800C8EFC0 /* GWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWNavigationController.h; sourceTree = "<group>"; };
+		8D0EF7231CCDEC3800C8EFC0 /* GWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNavigationController.m; sourceTree = "<group>"; };
+		8D0EF7251CCDF55300C8EFC0 /* GWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWBaseViewController.h; sourceTree = "<group>"; };
+		8D0EF7261CCDF55300C8EFC0 /* GWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWBaseViewController.m; sourceTree = "<group>"; };
+		8D0EF7281CCE0C6500C8EFC0 /* GWCustonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWCustonViewController.h; sourceTree = "<group>"; };
+		8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWCustonViewController.m; sourceTree = "<group>"; };
 		C41733571CC91F31000BBBD8 /* NSArray+LYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LYAdd.h"; sourceTree = "<group>"; };
 		C41733581CC91F31000BBBD8 /* NSArray+LYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LYAdd.m"; sourceTree = "<group>"; };
 		C41733591CC91F31000BBBD8 /* NSBundle+LYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+LYAdd.h"; sourceTree = "<group>"; };
@@ -85,8 +97,8 @@
 		C417337E1CC91F31000BBBD8 /* UITextField+LYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LYAdd.m"; sourceTree = "<group>"; };
 		C417337F1CC91F31000BBBD8 /* UIView+LYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYAdd.h"; sourceTree = "<group>"; };
 		C41733801CC91F31000BBBD8 /* UIView+LYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYAdd.m"; sourceTree = "<group>"; };
-		C417339F1CC923DA000BBBD8 /* GWSubscriberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSubscriberViewController.h; sourceTree = "<group>"; };
-		C41733A01CC923DA000BBBD8 /* GWSubscriberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSubscriberViewController.m; sourceTree = "<group>"; };
+		C417339F1CC923DA000BBBD8 /* GWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWHomeViewController.h; sourceTree = "<group>"; };
+		C41733A01CC923DA000BBBD8 /* GWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWHomeViewController.m; sourceTree = "<group>"; };
 		C41733A21CC9240C000BBBD8 /* GWHotNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWHotNewsViewController.h; sourceTree = "<group>"; };
 		C41733A31CC9240C000BBBD8 /* GWHotNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWHotNewsViewController.m; sourceTree = "<group>"; };
 		C41733A51CC9241F000BBBD8 /* GWMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWMeViewController.h; sourceTree = "<group>"; };
@@ -107,7 +119,7 @@
 		C41733BF1CC92F97000BBBD8 /* theme_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = theme_pink.bundle; sourceTree = "<group>"; };
 		C41733C31CC931C2000BBBD8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C470382C1CC85E3000DC5ED2 /* MuZhiHeNan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuZhiHeNan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C47038301CC85E3000DC5ED2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
+		C47038301CC85E3000DC5ED2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C47038321CC85E3000DC5ED2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		C47038331CC85E3000DC5ED2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		C470383B1CC85E3000DC5ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,8 +150,8 @@
 		C417334F1CC91D99000BBBD8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C417339F1CC923DA000BBBD8 /* GWSubscriberViewController.h */,
-				C41733A01CC923DA000BBBD8 /* GWSubscriberViewController.m */,
+				C417339F1CC923DA000BBBD8 /* GWHomeViewController.h */,
+				C41733A01CC923DA000BBBD8 /* GWHomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -176,7 +188,8 @@
 				C41733AE1CC9270B000BBBD8 /* GWTabBarManager.m */,
 				C41733B01CC92F64000BBBD8 /* GWThemeManager.h */,
 				C41733B11CC92F64000BBBD8 /* GWThemeManager.m */,
-				C47038301CC85E3000DC5ED2 /* main.m */,
+				8D0414831CCDC43300235F50 /* GWBundleManager.h */,
+				8D0414841CCDC43300235F50 /* GWBundleManager.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -314,6 +327,12 @@
 		C417339B1CC922E2000BBBD8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D0EF7221CCDEC3800C8EFC0 /* GWNavigationController.h */,
+				8D0EF7231CCDEC3800C8EFC0 /* GWNavigationController.m */,
+				8D0EF7251CCDF55300C8EFC0 /* GWBaseViewController.h */,
+				8D0EF7261CCDF55300C8EFC0 /* GWBaseViewController.m */,
+				8D0EF7281CCE0C6500C8EFC0 /* GWCustonViewController.h */,
+				8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -375,6 +394,7 @@
 		C470382F1CC85E3000DC5ED2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C47038301CC85E3000DC5ED2 /* main.m */,
 				C470383D1CC85E3000DC5ED2 /* LaunchScreen.storyboard */,
 				C47038401CC85E3000DC5ED2 /* Info.plist */,
 				C470383B1CC85E3000DC5ED2 /* Assets.xcassets */,
@@ -466,9 +486,11 @@
 				C47038311CC85E3000DC5ED2 /* main.m in Sources */,
 				C41733921CC91F31000BBBD8 /* UIView+LYAdd.m in Sources */,
 				C417338B1CC91F31000BBBD8 /* NSObject+LYAdd.m in Sources */,
+				8D0EF7241CCDEC3800C8EFC0 /* GWNavigationController.m in Sources */,
 				C417338F1CC91F31000BBBD8 /* UIColor+LYAdd.m in Sources */,
 				C41733AC1CC9242F000BBBD8 /* GWAppViewController.m in Sources */,
-				C41733A11CC923DA000BBBD8 /* GWSubscriberViewController.m in Sources */,
+				8D0EF7271CCDF55300C8EFC0 /* GWBaseViewController.m in Sources */,
+				C41733A11CC923DA000BBBD8 /* GWHomeViewController.m in Sources */,
 				C417338E1CC91F31000BBBD8 /* CALayer+LYAdd.m in Sources */,
 				C41733841CC91F31000BBBD8 /* NSDate+LYAdd.m in Sources */,
 				C41733AF1CC9270B000BBBD8 /* GWTabBarManager.m in Sources */,
@@ -484,6 +506,8 @@
 				C417338C1CC91F31000BBBD8 /* NSString+LYAdd.m in Sources */,
 				C41733901CC91F31000BBBD8 /* UIImage+LYAdd.m in Sources */,
 				C41733911CC91F31000BBBD8 /* UITextField+LYAdd.m in Sources */,
+				8D0414851CCDC43300235F50 /* GWBundleManager.m in Sources */,
+				8D0EF72A1CCE0C6500C8EFC0 /* GWCustonViewController.m in Sources */,
 				C41733881CC91F31000BBBD8 /* NSMutableDictionary+LYAdd.m in Sources */,
 				C417338A1CC91F31000BBBD8 /* NSMutableURLRequest+LYAdd.m in Sources */,
 				C41733851CC91F31000BBBD8 /* NSDictionary+LYAdd.m in Sources */,

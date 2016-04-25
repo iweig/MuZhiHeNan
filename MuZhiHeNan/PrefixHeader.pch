@@ -10,11 +10,17 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #import <UIKit/UIKit.h>
+#import "GWBaseViewController.h"
+#import "GWCustonViewController.h"
+#import "GWNavigationController.h"
+#import "GWBundleManager.h"
 
 //获取NSUserDefaults
 #define kUserDefaults  NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
+#define kWeakSelf __weak typeof(self) weakSelf = self;
 
-
+//屏幕size
+#define kScreenSize [UIScreen mainScreen].bounds.size
 
 #endif /* PrefixHeader_pch */

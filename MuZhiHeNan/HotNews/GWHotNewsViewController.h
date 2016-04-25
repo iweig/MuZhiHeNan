@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GWHotNewsViewController : UIViewController
+@interface GWHotNewsViewController : GWBaseViewController
 
 @end

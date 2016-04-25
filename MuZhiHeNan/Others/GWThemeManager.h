@@ -10,10 +10,17 @@
 
 @interface GWThemeManager : NSObject
 
-- (void)intiCurrentTheme;
++ (instancetype)shareThemeManager;
+
+- (void)initCurrentTheme;
 
 - (void)setTHemeType:(NSInteger)type;
 
 - (UIImage *)imageWithNameString:(NSString *)imageStr;
+
+- (UIColor *)themeTintColor;
+
+//配置app的样式
+- (void)setupThemeStyle;
 
 @end

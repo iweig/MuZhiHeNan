@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GWMeViewController : UIViewController
+@interface GWMeViewController : GWCustonViewController
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GWTabBarManager.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,9 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
+    
+    //设置窗口的根视图控制器
+    [[GWTabBarManager shareTabBarManager] setupTabBar:self.window];
 
     return YES;
 }

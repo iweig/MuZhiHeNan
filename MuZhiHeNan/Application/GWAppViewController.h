@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GWAppViewController : UIViewController
+@interface GWAppViewController : GWBaseViewController
 
 @end
