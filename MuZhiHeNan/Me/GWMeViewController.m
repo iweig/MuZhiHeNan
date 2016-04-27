@@ -7,7 +7,6 @@
 //
 
 #import "GWMeViewController.h"
-#import "GWTestViewController.h"
 
 @interface GWMeViewController ()
 
@@ -25,10 +24,5 @@
     self.navigationItem.title = @"我";
 }
 
-- (IBAction)btnClick:(id)sender
-{
-    [self.navigationController pushViewController:[[GWTestViewController alloc] init] animated:YES];
-    
-}
 
 @end

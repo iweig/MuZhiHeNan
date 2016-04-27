@@ -22,7 +22,6 @@
     if (self = [super initWithRootViewController:rootViewController])
     {
         self.navigationBar.tintColor = [UIColor whiteColor];
-        
     }
     return self;
 }
@@ -30,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupTitle];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -100) forBarMetrics:UIBarMetricsDefault];
     kWeakSelf
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.interactivePopGestureRecognizer.delegate = weakSelf;
@@ -70,6 +71,22 @@
     
     return viewController;
 }
+
+/**
+ *  配置title的样式
+ */
+- (void)setupTitle
+{
+    self.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor whiteColor]};
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
+
+#pragma mark -UINavigationControllerDelegate
 
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
