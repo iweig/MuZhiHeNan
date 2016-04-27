@@ -23,7 +23,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [[GWTabBarManager shareTabBarManager] tabBarHindden:NO];
+//    [[GWTabBarManager shareTabBarManager] tabBarHindden:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -35,7 +35,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-     [[GWTabBarManager shareTabBarManager] tabBarHindden:YES];
+
 }
 
 
@@ -43,7 +43,7 @@
 {
     //初始化nav leftNavigationItem
     UIBarButtonItem *meItem = [[UIBarButtonItem alloc] initWithImage:[[GWBundleManager shareBundleManager] imageWithName:@"DashboardTabBarItemProfile" bundleString:@"theme_default"] style:UIBarButtonItemStylePlain target:self action:@selector(leftItemClick)];
-    self.customNavigationController.navigationItem.leftBarButtonItem = meItem;
+    self.navigationController.navigationItem.leftBarButtonItem = meItem;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
@@ -51,22 +51,18 @@
     return UIStatusBarStyleLightContent;
 }
 
-- (GWNavigationController *)customNavigationController
-{
-    return (GWNavigationController *)self.navigationController;
-}
 
 /**
  *  配置title的样式
  */
 - (void)setupTitle
 {
-    self.customNavigationController.navBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:21.0],NSForegroundColorAttributeName:[UIColor whiteColor]};
+    self.navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:20],NSForegroundColorAttributeName:[UIColor whiteColor]};
 }
 
 - (void)leftItemClick
 {
-    [self.customNavigationController pushViewController:[[GWMeViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[GWMeViewController alloc] init] animated:YES];
 }
 
 

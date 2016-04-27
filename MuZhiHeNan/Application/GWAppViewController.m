@@ -16,14 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.customNavigationController setNavTitle:@"应用"];
-    
+    [self setupUI];
+}
+
+- (void)setupUI
+{
+    self.navigationItem.title = @"应用";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+    
 }
 
 

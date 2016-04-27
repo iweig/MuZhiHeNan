@@ -8,10 +8,9 @@
 
 #import "GWNavigationController.h"
 #import "GWThemeManager.h"
+#import "UIImage+Utilities.h"
 
-@interface GWNavigationController () <UIGestureRecognizerDelegate>
-
-
+@interface GWNavigationController () <UIGestureRecognizerDelegate, UINavigationControllerDelegate>
 
 
 @end
@@ -20,20 +19,9 @@
 
 - (instancetype)initWithRootViewController:(UIViewController *)rootViewController
 {
-    if (self = [super initWithRootViewController:rootViewController]) {
-        //取消系统的导航栏
-        self.navigationBarHidden = YES;
-        UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, kScreenSize.width, 64)];
-        navBar.tintColor = [UIColor whiteColor];
-        [self.view addSubview:navBar];
-        
-        //初始化title
-        UINavigationItem *titleItem = [[UINavigationItem alloc] init];
-        [navBar pushNavigationItem:titleItem animated:NO];
-        
-        self.navigationItem = titleItem;
-                    
-        self.navBar = navBar;
+    if (self = [super initWithRootViewController:rootViewController])
+    {
+        self.navigationBar.tintColor = [UIColor whiteColor];
         
     }
     return self;
@@ -46,7 +34,6 @@
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.interactivePopGestureRecognizer.delegate = weakSelf;
     }
-    
 }
 
 /**
@@ -54,24 +41,45 @@
  */
 - (void)setNavigationBarBackgroundImage
 {
-    [self.navBar setBackgroundImage:[[GWThemeManager shareThemeManager] imageWithNameString:@"toolbar_bg"] forBarMetrics:UIBarMetricsDefault];
+    UIImage *image = [[GWThemeManager shareThemeManager] imageWithNameString:@"toolbar_bg"];
+    [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
 }
 
+//重写系统的push方法
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
+    viewController.hidesBottomBarWhenPushed = YES;
     [super pushViewController:viewController animated:animated];
-    self.navigationItem.title = @"";
+    viewController.hidesBottomBarWhenPushed = NO;
 }
 
-/**
- *  设置导航栏的title
- *
- *  @param title 传入title
- */
-- (void)setNavTitle:(NSString *)title
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated
 {
-    self.navigationItem.title = title;
+
+    UIViewController *viewController = [super popViewControllerAnimated:animated];
+    
+    if (self.viewControllers.count == 2)
+    {
+        viewController.tabBarController.tabBar.hidden = YES;
+    }
+    
+    else if(self.viewControllers.count == 1)
+    {
+        self.delegate = self;
+    }
+    
+    return viewController;
 }
 
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    
+}
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    viewController.tabBarController.tabBar.hidden = NO;
+    self.delegate = nil;
+}
 
 @end

@@ -11,6 +11,8 @@
 		8D0EF7241CCDEC3800C8EFC0 /* GWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7231CCDEC3800C8EFC0 /* GWNavigationController.m */; };
 		8D0EF7271CCDF55300C8EFC0 /* GWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7261CCDF55300C8EFC0 /* GWBaseViewController.m */; };
 		8D0EF72A1CCE0C6500C8EFC0 /* GWCustonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */; };
+		8D209F0F1CD0888F00E546B7 /* GWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D209F0E1CD0888F00E546B7 /* GWTestViewController.m */; };
+		8DE2EA6D1CD061FA002B74EB /* UIImage+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2EA6C1CD061FA002B74EB /* UIImage+Utilities.m */; };
 		C41733811CC91F31000BBBD8 /* NSArray+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733581CC91F31000BBBD8 /* NSArray+LYAdd.m */; };
 		C41733821CC91F31000BBBD8 /* NSBundle+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417335A1CC91F31000BBBD8 /* NSBundle+LYAdd.m */; };
 		C41733831CC91F31000BBBD8 /* NSData+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417335C1CC91F31000BBBD8 /* NSData+LYAdd.m */; };
@@ -58,6 +60,10 @@
 		8D0EF7261CCDF55300C8EFC0 /* GWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWBaseViewController.m; sourceTree = "<group>"; };
 		8D0EF7281CCE0C6500C8EFC0 /* GWCustonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWCustonViewController.h; sourceTree = "<group>"; };
 		8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWCustonViewController.m; sourceTree = "<group>"; };
+		8D209F0D1CD0888F00E546B7 /* GWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWTestViewController.h; sourceTree = "<group>"; };
+		8D209F0E1CD0888F00E546B7 /* GWTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWTestViewController.m; sourceTree = "<group>"; };
+		8DE2EA6B1CD061FA002B74EB /* UIImage+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utilities.h"; sourceTree = "<group>"; };
+		8DE2EA6C1CD061FA002B74EB /* UIImage+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utilities.m"; sourceTree = "<group>"; };
 		C41733571CC91F31000BBBD8 /* NSArray+LYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LYAdd.h"; sourceTree = "<group>"; };
 		C41733581CC91F31000BBBD8 /* NSArray+LYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LYAdd.m"; sourceTree = "<group>"; };
 		C41733591CC91F31000BBBD8 /* NSBundle+LYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+LYAdd.h"; sourceTree = "<group>"; };
@@ -171,6 +177,8 @@
 				C41733A51CC9241F000BBBD8 /* GWMeViewController.h */,
 				C41733A61CC9241F000BBBD8 /* GWMeViewController.m */,
 				C41733A71CC9241F000BBBD8 /* GWMeViewController.xib */,
+				8D209F0D1CD0888F00E546B7 /* GWTestViewController.h */,
+				8D209F0E1CD0888F00E546B7 /* GWTestViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -184,6 +192,8 @@
 				C41733541CC91F11000BBBD8 /* Library */,
 				C47038321CC85E3000DC5ED2 /* AppDelegate.h */,
 				C47038331CC85E3000DC5ED2 /* AppDelegate.m */,
+				8D0EF7221CCDEC3800C8EFC0 /* GWNavigationController.h */,
+				8D0EF7231CCDEC3800C8EFC0 /* GWNavigationController.m */,
 				C41733AD1CC9270B000BBBD8 /* GWTabBarManager.h */,
 				C41733AE1CC9270B000BBBD8 /* GWTabBarManager.m */,
 				C41733B01CC92F64000BBBD8 /* GWThemeManager.h */,
@@ -276,6 +286,8 @@
 		C41733781CC91F31000BBBD8 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				8DE2EA6B1CD061FA002B74EB /* UIImage+Utilities.h */,
+				8DE2EA6C1CD061FA002B74EB /* UIImage+Utilities.m */,
 				C41733791CC91F31000BBBD8 /* UIColor+LYAdd.h */,
 				C417337A1CC91F31000BBBD8 /* UIColor+LYAdd.m */,
 				C417337B1CC91F31000BBBD8 /* UIImage+LYAdd.h */,
@@ -327,8 +339,6 @@
 		C417339B1CC922E2000BBBD8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8D0EF7221CCDEC3800C8EFC0 /* GWNavigationController.h */,
-				8D0EF7231CCDEC3800C8EFC0 /* GWNavigationController.m */,
 				8D0EF7251CCDF55300C8EFC0 /* GWBaseViewController.h */,
 				8D0EF7261CCDF55300C8EFC0 /* GWBaseViewController.m */,
 				8D0EF7281CCE0C6500C8EFC0 /* GWCustonViewController.h */,
@@ -492,8 +502,10 @@
 				8D0EF7271CCDF55300C8EFC0 /* GWBaseViewController.m in Sources */,
 				C41733A11CC923DA000BBBD8 /* GWHomeViewController.m in Sources */,
 				C417338E1CC91F31000BBBD8 /* CALayer+LYAdd.m in Sources */,
+				8DE2EA6D1CD061FA002B74EB /* UIImage+Utilities.m in Sources */,
 				C41733841CC91F31000BBBD8 /* NSDate+LYAdd.m in Sources */,
 				C41733AF1CC9270B000BBBD8 /* GWTabBarManager.m in Sources */,
+				8D209F0F1CD0888F00E546B7 /* GWTestViewController.m in Sources */,
 				C41733811CC91F31000BBBD8 /* NSArray+LYAdd.m in Sources */,
 				C41733861CC91F31000BBBD8 /* NSFileManager+LYAdd.m in Sources */,
 				C41733A81CC9241F000BBBD8 /* GWMeViewController.m in Sources */,

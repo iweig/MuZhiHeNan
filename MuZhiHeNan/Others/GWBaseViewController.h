@@ -11,7 +11,6 @@
 
 @interface GWBaseViewController : UIViewController
 
-@property (nonatomic, strong) GWNavigationController * customNavigationController;
 
 - (void)leftItemClick;
 

@@ -10,8 +10,6 @@
 
 @interface GWCustonViewController : UIViewController
 
-@property (nonatomic, strong) GWNavigationController * customNavigationController;
-
 - (void)returnItemClick;
 
 @end

@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.customNavigationController setNavTitle:@"订阅"];
+    [self setupUI];
+}
+
+- (void)setupUI
+{
+    self.navigationItem.title = @"订阅";
 }
 
 - (void)didReceiveMemoryWarning {

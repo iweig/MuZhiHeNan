@@ -11,10 +11,6 @@
 
 @implementation GWCustonViewController
 
-- (GWNavigationController *)customNavigationController
-{
-    return (GWNavigationController *)self.navigationController;
-}
 
 - (void)viewDidLoad
 {
@@ -31,12 +27,12 @@
 {
     //初始化nav leftNavigationItem
     UIBarButtonItem *returnItem = [[UIBarButtonItem alloc] initWithImage:[[GWBundleManager shareBundleManager] imageWithName:@"addRootBlock_toolbar_return" bundleString:@"theme_default"] style:UIBarButtonItemStylePlain target:self action:@selector(returnItemClick)];
-    self.customNavigationController.navigationItem.leftBarButtonItem = returnItem;
+    self.navigationController.navigationItem.leftBarButtonItem = returnItem;
 }
 
 - (void)returnItemClick
 {
-    [self.customNavigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

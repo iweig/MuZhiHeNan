@@ -30,7 +30,6 @@ static GWTabBarManager *tabBarManager;
 
 - (void)setupTabBar:(UIWindow *)window
 {
-    
     //初始化首页ViewController
     GWHomeViewController *homeVC = [[GWHomeViewController alloc] init];
     homeVC.tabBarItem.title = @"订阅";
@@ -55,7 +54,6 @@ static GWTabBarManager *tabBarManager;
     
     //设置app主题
     [[GWThemeManager shareThemeManager] setupThemeStyle];
-    
 }
 
 - (void)tabBarHindden:(BOOL)isHidden

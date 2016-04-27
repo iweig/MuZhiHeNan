@@ -10,12 +10,8 @@
 
 @interface GWNavigationController : UINavigationController
 
-@property (nonatomic, strong) UINavigationBar *navBar;
-
-@property (nonatomic, strong) UINavigationItem *navigationItem;
 
 - (void)setNavigationBarBackgroundImage;
 
-- (void)setNavTitle:(NSString *)title;
 
 @end
