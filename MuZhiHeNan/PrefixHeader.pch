@@ -9,7 +9,11 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+
 #import <UIKit/UIKit.h>
+#import "NetworkConf.h"
+
+#import "UIImageView+WebCache.h"
 #import "GWBaseViewController.h"
 #import "GWCustonViewController.h"
 #import "GWNavigationController.h"
@@ -22,5 +26,10 @@
 
 //屏幕size
 #define kScreenSize [UIScreen mainScreen].bounds.size
+
+//宏定义：字符串拼接
+#define kNSString(...) [NSString stringWithFormat:__VA_ARGS__]
+
+#define kNSUrl(...) [NSURL URLWithString:__VA_ARGS__]
 
 #endif /* PrefixHeader_pch */
