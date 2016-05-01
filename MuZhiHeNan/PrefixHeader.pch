@@ -12,6 +12,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NetworkConf.h"
+#import "UIColor+ColorTransform.h"
 
 #import "UIImageView+WebCache.h"
 #import "GWBaseViewController.h"

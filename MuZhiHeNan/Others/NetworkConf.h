@@ -16,5 +16,6 @@
 
 #define kUserId @"0"
 #define kToken @"8de8af6f01e8a9b8b2a649a9"
+#define kGetReDianData @"/v9/content/getposition"
 
 #endif /* NetworkConf_h */
