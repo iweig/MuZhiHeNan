@@ -13,6 +13,7 @@
 
 #define kGlobalURL @"http://api.henandaily.cn"
 #define kGetAllCategory @"/v1/content/getallcategory"
+#define kGetAllNews @"/v1/content/getallnews1"
 
 #define kUserId @"0"
 #define kToken @"8de8af6f01e8a9b8b2a649a9"

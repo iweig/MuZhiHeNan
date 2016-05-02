@@ -28,6 +28,6 @@
 @property (nonatomic, copy) NSString *content_type;
 @property (nonatomic, copy) NSString *brief;
 
-+ (instancetype)adesModelWithDict:(NSDictionary *)dict;
++ (instancetype)newsModelWithDict:(NSDictionary *)dict;
 
 @end

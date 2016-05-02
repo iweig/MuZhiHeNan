@@ -174,7 +174,7 @@
     [HttpManager GET:kGetReDianData parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject) {
      NSArray *jiaodianArr = responseObject[0][@"jiaodiantu"];
      for (NSDictionary *modelDict in jiaodianArr) {
-         GWNewsModel *adesModel = [GWNewsModel adesModelWithDict:modelDict];
+         GWNewsModel *adesModel = [GWNewsModel newsModelWithDict:modelDict];
          [weakSelf.adsArr addObject:adesModel];
          [weakSelf.imageGroup addObject:modelDict[@"thumb"]];
          [weakSelf.titleGroup addObject:modelDict[@"title"]];

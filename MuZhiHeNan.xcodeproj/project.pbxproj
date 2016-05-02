@@ -12,6 +12,14 @@
 		8D0EF7271CCDF55300C8EFC0 /* GWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7261CCDF55300C8EFC0 /* GWBaseViewController.m */; };
 		8D0EF72A1CCE0C6500C8EFC0 /* GWCustonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */; };
 		8DE2EA6D1CD061FA002B74EB /* UIImage+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2EA6C1CD061FA002B74EB /* UIImage+Utilities.m */; };
+		8DFCF4F81CD6F182006B046B /* GWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */; };
+		8DFCF4FC1CD6F328006B046B /* GWNewsHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF4FA1CD6F328006B046B /* GWNewsHeaderCell.m */; };
+		8DFCF4FD1CD6F328006B046B /* GWNewsHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFCF4FB1CD6F328006B046B /* GWNewsHeaderCell.xib */; };
+		8DFCF5101CD72EE9006B046B /* biaoqian_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DFCF50E1CD72EE9006B046B /* biaoqian_01@2x.png */; };
+		8DFCF5111CD72EE9006B046B /* biaoqian_01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DFCF50F1CD72EE9006B046B /* biaoqian_01@3x.png */; };
+		8DFCF5141CD73F3E006B046B /* GWAdNewsHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF5131CD73F3E006B046B /* GWAdNewsHeaderCell.m */; };
+		8DFCF5181CD7417D006B046B /* GWAdNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF5161CD7417D006B046B /* GWAdNewsCell.m */; };
+		8DFCF5191CD7417D006B046B /* GWAdNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFCF5171CD7417D006B046B /* GWAdNewsCell.xib */; };
 		C401A5521CD5AC44004A55FC /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C401A5281CD5AC44004A55FC /* MJRefreshAutoFooter.m */; };
 		C401A5531CD5AC44004A55FC /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C401A52A1CD5AC44004A55FC /* MJRefreshBackFooter.m */; };
 		C401A5541CD5AC44004A55FC /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C401A52C1CD5AC44004A55FC /* MJRefreshComponent.m */; };
@@ -134,7 +142,6 @@
 		C41733901CC91F31000BBBD8 /* UIImage+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417337C1CC91F31000BBBD8 /* UIImage+LYAdd.m */; };
 		C41733911CC91F31000BBBD8 /* UITextField+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417337E1CC91F31000BBBD8 /* UITextField+LYAdd.m */; };
 		C41733921CC91F31000BBBD8 /* UIView+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733801CC91F31000BBBD8 /* UIView+LYAdd.m */; };
-		C41733A11CC923DA000BBBD8 /* GWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733A01CC923DA000BBBD8 /* GWHomeViewController.m */; };
 		C41733A41CC9240C000BBBD8 /* GWHotNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733A31CC9240C000BBBD8 /* GWHotNewsViewController.m */; };
 		C41733A81CC9241F000BBBD8 /* GWMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733A61CC9241F000BBBD8 /* GWMeViewController.m */; };
 		C41733AC1CC9242F000BBBD8 /* GWAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733AB1CC9242F000BBBD8 /* GWAppViewController.m */; };
@@ -184,6 +191,18 @@
 		8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWCustonViewController.m; sourceTree = "<group>"; };
 		8DE2EA6B1CD061FA002B74EB /* UIImage+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utilities.h"; sourceTree = "<group>"; };
 		8DE2EA6C1CD061FA002B74EB /* UIImage+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utilities.m"; sourceTree = "<group>"; };
+		8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWHomeViewController.m; path = MuZhiHeNan/Home/GWHomeViewController.m; sourceTree = SOURCE_ROOT; };
+		8DFCF4F71CD6F182006B046B /* GWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWHomeViewController.h; path = MuZhiHeNan/Home/GWHomeViewController.h; sourceTree = SOURCE_ROOT; };
+		8DFCF4F91CD6F328006B046B /* GWNewsHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWNewsHeaderCell.h; sourceTree = "<group>"; };
+		8DFCF4FA1CD6F328006B046B /* GWNewsHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNewsHeaderCell.m; sourceTree = "<group>"; };
+		8DFCF4FB1CD6F328006B046B /* GWNewsHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWNewsHeaderCell.xib; sourceTree = "<group>"; };
+		8DFCF50E1CD72EE9006B046B /* biaoqian_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biaoqian_01@2x.png"; sourceTree = "<group>"; };
+		8DFCF50F1CD72EE9006B046B /* biaoqian_01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biaoqian_01@3x.png"; sourceTree = "<group>"; };
+		8DFCF5121CD73F3E006B046B /* GWAdNewsHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWAdNewsHeaderCell.h; sourceTree = "<group>"; };
+		8DFCF5131CD73F3E006B046B /* GWAdNewsHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWAdNewsHeaderCell.m; sourceTree = "<group>"; };
+		8DFCF5151CD7417D006B046B /* GWAdNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWAdNewsCell.h; sourceTree = "<group>"; };
+		8DFCF5161CD7417D006B046B /* GWAdNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWAdNewsCell.m; sourceTree = "<group>"; };
+		8DFCF5171CD7417D006B046B /* GWAdNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWAdNewsCell.xib; sourceTree = "<group>"; };
 		C401A5271CD5AC44004A55FC /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		C401A5281CD5AC44004A55FC /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		C401A5291CD5AC44004A55FC /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -434,8 +453,6 @@
 		C417337E1CC91F31000BBBD8 /* UITextField+LYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LYAdd.m"; sourceTree = "<group>"; };
 		C417337F1CC91F31000BBBD8 /* UIView+LYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYAdd.h"; sourceTree = "<group>"; };
 		C41733801CC91F31000BBBD8 /* UIView+LYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYAdd.m"; sourceTree = "<group>"; };
-		C417339F1CC923DA000BBBD8 /* GWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWHomeViewController.h; path = ../GWHomeViewController.h; sourceTree = "<group>"; };
-		C41733A01CC923DA000BBBD8 /* GWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWHomeViewController.m; path = ../GWHomeViewController.m; sourceTree = "<group>"; };
 		C41733A21CC9240C000BBBD8 /* GWHotNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWHotNewsViewController.h; sourceTree = "<group>"; };
 		C41733A31CC9240C000BBBD8 /* GWHotNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWHotNewsViewController.m; sourceTree = "<group>"; };
 		C41733A51CC9241F000BBBD8 /* GWMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWMeViewController.h; sourceTree = "<group>"; };
@@ -863,8 +880,8 @@
 		C401A67B1CD5B582004A55FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C417339F1CC923DA000BBBD8 /* GWHomeViewController.h */,
-				C41733A01CC923DA000BBBD8 /* GWHomeViewController.m */,
+				8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */,
+				8DFCF4F71CD6F182006B046B /* GWHomeViewController.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -889,6 +906,14 @@
 				C4617A611CD649C400DF1D74 /* GWNewStyleOneCell.h */,
 				C4617A621CD649C400DF1D74 /* GWNewStyleOneCell.m */,
 				C4617A631CD649C400DF1D74 /* GWNewStyleOneCell.xib */,
+				8DFCF4F91CD6F328006B046B /* GWNewsHeaderCell.h */,
+				8DFCF4FA1CD6F328006B046B /* GWNewsHeaderCell.m */,
+				8DFCF4FB1CD6F328006B046B /* GWNewsHeaderCell.xib */,
+				8DFCF5121CD73F3E006B046B /* GWAdNewsHeaderCell.h */,
+				8DFCF5131CD73F3E006B046B /* GWAdNewsHeaderCell.m */,
+				8DFCF5151CD7417D006B046B /* GWAdNewsCell.h */,
+				8DFCF5161CD7417D006B046B /* GWAdNewsCell.m */,
+				8DFCF5171CD7417D006B046B /* GWAdNewsCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1032,6 +1057,8 @@
 		C41733531CC91EE9000BBBD8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8DFCF50E1CD72EE9006B046B /* biaoqian_01@2x.png */,
+				8DFCF50F1CD72EE9006B046B /* biaoqian_01@3x.png */,
 				C4617A661CD64C2C00DF1D74 /* home_yuedu@2x.png */,
 				C4617A681CD64C3000DF1D74 /* home_yuedu@3x.png */,
 				C4617A3A1CD61A2900DF1D74 /* NormalGrayIcon@2x.png */,
@@ -1363,7 +1390,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C41733B81CC92F88000BBBD8 /* theme_red.bundle in Resources */,
+				8DFCF5191CD7417D006B046B /* GWAdNewsCell.xib in Resources */,
+				8DFCF5111CD72EE9006B046B /* biaoqian_01@3x.png in Resources */,
 				C401A5D31CD5AC78004A55FC /* IQKeyboardManager.bundle in Resources */,
+				8DFCF4FD1CD6F328006B046B /* GWNewsHeaderCell.xib in Resources */,
 				C401A6A81CD5C556004A55FC /* GWChildredCategoryCell.xib in Resources */,
 				C41733BE1CC92F91000BBBD8 /* theme_dark.bundle in Resources */,
 				C401A6301CD5ACBD004A55FC /* ProgressHUD.bundle in Resources */,
@@ -1390,6 +1420,7 @@
 				C401A5E51CD5AC7F004A55FC /* DateTools.bundle in Resources */,
 				C401A6AB1CD5C6CE004A55FC /* placeholderImage@2x.png in Resources */,
 				C4617A651CD649C400DF1D74 /* GWNewStyleOneCell.xib in Resources */,
+				8DFCF5101CD72EE9006B046B /* biaoqian_01@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1424,6 +1455,7 @@
 				C417338B1CC91F31000BBBD8 /* NSObject+LYAdd.m in Sources */,
 				C401A62B1CD5ACA7004A55FC /* UIView+WebCacheOperation.m in Sources */,
 				C401A59B1CD5AC56004A55FC /* AFHTTPSessionManager.m in Sources */,
+				8DFCF5181CD7417D006B046B /* GWAdNewsCell.m in Sources */,
 				C401A61E1CD5ACA7004A55FC /* SDImageCache.m in Sources */,
 				C401A59C1CD5AC56004A55FC /* AFNetworkReachabilityManager.m in Sources */,
 				C401A64E1CD5ACCE004A55FC /* MASConstraintMaker.m in Sources */,
@@ -1458,7 +1490,6 @@
 				C401A6731CD5B534004A55FC /* MJProperty.m in Sources */,
 				C401A6221CD5ACA7004A55FC /* SDWebImageDownloaderOperation.m in Sources */,
 				C401A6781CD5B534004A55FC /* NSObject+MJKeyValue.m in Sources */,
-				C41733A11CC923DA000BBBD8 /* GWHomeViewController.m in Sources */,
 				C4617A601CD6238700DF1D74 /* UIView+SDExtension.m in Sources */,
 				C417338E1CC91F31000BBBD8 /* CALayer+LYAdd.m in Sources */,
 				C401A6541CD5ACCE004A55FC /* View+MASAdditions.m in Sources */,
@@ -1484,6 +1515,7 @@
 				C401A6291CD5ACA7004A55FC /* UIImageView+HighlightedWebCache.m in Sources */,
 				C401A55D1CD5AC44004A55FC /* MJRefreshGifHeader.m in Sources */,
 				C401A5E71CD5AC7F004A55FC /* DTError.m in Sources */,
+				8DFCF4FC1CD6F328006B046B /* GWNewsHeaderCell.m in Sources */,
 				C401A5581CD5AC44004A55FC /* MJRefreshAutoNormalFooter.m in Sources */,
 				C41733A81CC9241F000BBBD8 /* GWMeViewController.m in Sources */,
 				C401A6591CD5AF84004A55FC /* HttpManager.m in Sources */,
@@ -1532,10 +1564,12 @@
 				C401A5521CD5AC44004A55FC /* MJRefreshAutoFooter.m in Sources */,
 				C401A6311CD5ACBD004A55FC /* ProgressHUD.m in Sources */,
 				C423A6061CD608DF00E637A9 /* UIColor+ColorTransform.m in Sources */,
+				8DFCF5141CD73F3E006B046B /* GWAdNewsHeaderCell.m in Sources */,
 				C41733851CC91F31000BBBD8 /* NSDictionary+LYAdd.m in Sources */,
 				C401A6211CD5ACA7004A55FC /* SDWebImageDownloader.m in Sources */,
 				C4617A5A1CD6238700DF1D74 /* TAAbstractDotView.m in Sources */,
 				C401A5551CD5AC44004A55FC /* MJRefreshFooter.m in Sources */,
+				8DFCF4F81CD6F182006B046B /* GWHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GWNewsModel.h"
 
 @interface GWNewStyleOneCell : UITableViewCell
+
+@property (nonatomic, strong) GWNewsModel *newsModel;
 
 @end

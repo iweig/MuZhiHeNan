@@ -15,7 +15,7 @@
     return [GWNewsModel mj_objectWithKeyValues:dict];
 }
 
-+ (instancetype)adesModelWithDict:(NSDictionary *)dict
++ (instancetype)newsModelWithDict:(NSDictionary *)dict
 {
     return [[self alloc] initWithDict:dict];
 }
