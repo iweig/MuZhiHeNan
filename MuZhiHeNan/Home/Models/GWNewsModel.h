@@ -8,7 +8,7 @@
 
 #import "BaseModel.h"
 
-@interface GWAdesModel : BaseModel
+@interface GWNewsModel : BaseModel
 
 @property (nonatomic, assign) NSInteger is_link;
 @property (nonatomic, assign) NSInteger views;

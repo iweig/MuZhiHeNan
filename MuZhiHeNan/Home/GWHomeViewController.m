@@ -10,14 +10,14 @@
 #import "GWChildredCategoryCell.h"
 #import "GWCategoryModel.h"
 #import "SDCycleScrollView.h"
-#import "GWAdesModel.h"
+#import "GWNewsModel.h"
 #import "GWCategoryHeaderReusableView.h"
 
 #define kMinimumInteritemSpacing 1
 #define kMinimumLineSpacing 1
 #define kItemNum 3.0
 
-@interface GWHomeViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface GWHomeViewController () <UICollectionViewDataSource, UICollectionViewDelegate, SDCycleScrollViewDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 
@@ -80,6 +80,7 @@
     //初始化广告栏
     SDCycleScrollView *adScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, -200, kScreenSize.width, 200) imagesGroup:nil];
     adScrollView.autoScrollTimeInterval = 6.0;
+    adScrollView.delegate = self;
     self.adScrollView = adScrollView;
 
     //初始化订阅信息
@@ -88,7 +89,7 @@
     flowLayout.itemSize = CGSizeMake(w ,w);
     flowLayout.minimumInteritemSpacing = kMinimumInteritemSpacing;
     flowLayout.minimumLineSpacing = kMinimumLineSpacing;
-    flowLayout.headerReferenceSize = CGSizeMake(kScreenSize.width, 50);
+    flowLayout.headerReferenceSize = CGSizeMake(kScreenSize.width, 40);
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:flowLayout];
     collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     collectionView.delegate = self;
@@ -144,6 +145,12 @@
     NSLog(@"%@",indexPath);
 }
 
+#pragma mark -SDCycleScrollViewDelegate
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+{
+    NSLog(@"%ld",index);
+}
+
 #pragma mark -网络请求
 - (void)getData
 {
@@ -167,7 +174,7 @@
     [HttpManager GET:kGetReDianData parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject) {
      NSArray *jiaodianArr = responseObject[0][@"jiaodiantu"];
      for (NSDictionary *modelDict in jiaodianArr) {
-         GWAdesModel *adesModel = [GWAdesModel adesModelWithDict:modelDict];
+         GWNewsModel *adesModel = [GWNewsModel adesModelWithDict:modelDict];
          [weakSelf.adsArr addObject:adesModel];
          [weakSelf.imageGroup addObject:modelDict[@"thumb"]];
          [weakSelf.titleGroup addObject:modelDict[@"title"]];

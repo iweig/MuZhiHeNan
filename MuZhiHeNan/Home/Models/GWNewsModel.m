@@ -6,13 +6,13 @@
 //  Copyright © 2016年 GW. All rights reserved.
 //
 
-#import "GWAdesModel.h"
+#import "GWNewsModel.h"
 
-@implementation GWAdesModel
+@implementation GWNewsModel
 
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
-    return [GWAdesModel mj_objectWithKeyValues:dict];
+    return [GWNewsModel mj_objectWithKeyValues:dict];
 }
 
 + (instancetype)adesModelWithDict:(NSDictionary *)dict

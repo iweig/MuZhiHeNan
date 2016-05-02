@@ -10,6 +10,9 @@
 
 @interface GWHotNewsViewController ()
 
+@property (nonatomic, strong) UITableView *tableView;
+
+
 @end
 
 @implementation GWHotNewsViewController
