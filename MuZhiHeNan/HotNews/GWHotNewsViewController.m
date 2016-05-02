@@ -148,6 +148,10 @@
 
 #pragma mark -UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
 
 #pragma mark -网络请求
 
