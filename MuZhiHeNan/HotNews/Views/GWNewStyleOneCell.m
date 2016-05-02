@@ -13,14 +13,18 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblCatName;
 @property (weak, nonatomic) IBOutlet UILabel *lblViews;
+@property (weak, nonatomic) IBOutlet UIButton *btnCatName;
 
 @end
 
 @implementation GWNewStyleOneCell
 
 - (void)awakeFromNib {
-    self.lblCatName.textColor = [UIColor colorWithHexString:@"#d0161f"];
-    self.lblCatName.layer.masksToBounds = YES;
+    [self.btnCatName setTitleColor:[UIColor colorWithHexString:@"#d0161f"] forState:UIControlStateNormal];
+    [self.btnCatName setBackgroundImage:[UIImage imageNamed:@"biaoqian_01"] forState:UIControlStateNormal];
+    self.btnCatName.titleLabel.font = [UIFont systemFontOfSize:10.0];
+    self.btnCatName.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    
 }
 
 - (void)setNewsModel:(GWNewsModel *)newsModel
@@ -28,7 +32,7 @@
     _newsModel = newsModel;
     [self.thumbImageView sd_setImageWithURL:kNSUrl(newsModel.thumb) placeholderImage:[UIImage imageNamed:@"home_logo01"]];
     self.lblTitle.text = newsModel.title;
-    self.lblCatName.text = newsModel.catname;
+    [self.btnCatName setTitle:newsModel.catname forState:UIControlStateNormal];
     self.lblViews.text = kNSString(@"%ld",newsModel.views);
 }
 
