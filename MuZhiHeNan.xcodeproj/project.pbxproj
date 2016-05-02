@@ -20,6 +20,7 @@
 		8DFCF5141CD73F3E006B046B /* GWAdNewsHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF5131CD73F3E006B046B /* GWAdNewsHeaderCell.m */; };
 		8DFCF5181CD7417D006B046B /* GWAdNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF5161CD7417D006B046B /* GWAdNewsCell.m */; };
 		8DFCF5191CD7417D006B046B /* GWAdNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFCF5171CD7417D006B046B /* GWAdNewsCell.xib */; };
+		8DFCF51C1CD74E28006B046B /* GWExpandModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF51B1CD74E28006B046B /* GWExpandModel.m */; };
 		C401A5521CD5AC44004A55FC /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C401A5281CD5AC44004A55FC /* MJRefreshAutoFooter.m */; };
 		C401A5531CD5AC44004A55FC /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C401A52A1CD5AC44004A55FC /* MJRefreshBackFooter.m */; };
 		C401A5541CD5AC44004A55FC /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C401A52C1CD5AC44004A55FC /* MJRefreshComponent.m */; };
@@ -203,6 +204,8 @@
 		8DFCF5151CD7417D006B046B /* GWAdNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWAdNewsCell.h; sourceTree = "<group>"; };
 		8DFCF5161CD7417D006B046B /* GWAdNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWAdNewsCell.m; sourceTree = "<group>"; };
 		8DFCF5171CD7417D006B046B /* GWAdNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWAdNewsCell.xib; sourceTree = "<group>"; };
+		8DFCF51A1CD74E28006B046B /* GWExpandModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWExpandModel.h; path = MuZhiHeNan/HotNews/Views/GWExpandModel.h; sourceTree = SOURCE_ROOT; };
+		8DFCF51B1CD74E28006B046B /* GWExpandModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWExpandModel.m; path = MuZhiHeNan/HotNews/Views/GWExpandModel.m; sourceTree = SOURCE_ROOT; };
 		C401A5271CD5AC44004A55FC /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		C401A5281CD5AC44004A55FC /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		C401A5291CD5AC44004A55FC /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -954,6 +957,8 @@
 		C401A6821CD5B5C0004A55FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8DFCF51A1CD74E28006B046B /* GWExpandModel.h */,
+				8DFCF51B1CD74E28006B046B /* GWExpandModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1468,6 +1473,7 @@
 				C4617A641CD649C400DF1D74 /* GWNewStyleOneCell.m in Sources */,
 				C401A6241CD5ACA7004A55FC /* SDWebImagePrefetcher.m in Sources */,
 				C401A6A71CD5C556004A55FC /* GWChildredCategoryCell.m in Sources */,
+				8DFCF51C1CD74E28006B046B /* GWExpandModel.m in Sources */,
 				C401A6981CD5C203004A55FC /* BaseModel.m in Sources */,
 				C401A6511CD5ACCE004A55FC /* MASViewConstraint.m in Sources */,
 				C401A6791CD5B534004A55FC /* NSObject+MJProperty.m in Sources */,

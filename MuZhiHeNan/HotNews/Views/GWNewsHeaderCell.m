@@ -12,6 +12,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.contentView.backgroundColor = [UIColor whiteColor];
     CGRect rect = self.frame;
     rect.size.width = kScreenSize.width;
     self.frame = rect;

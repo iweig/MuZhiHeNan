@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GWExpandModel.h"
 
 @interface GWAdNewsCell : UITableViewCell
+
+@property (nonatomic, strong) GWExpandModel *expandModel;
 
 @end

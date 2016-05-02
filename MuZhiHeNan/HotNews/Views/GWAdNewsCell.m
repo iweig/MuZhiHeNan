@@ -8,16 +8,21 @@
 
 #import "GWAdNewsCell.h"
 
+@interface GWAdNewsCell ()
+@property (weak, nonatomic) IBOutlet UIImageView *thumbImageView;
+
+@end
+
 @implementation GWAdNewsCell
 
 - (void)awakeFromNib {
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setExpandModel:(GWExpandModel *)expandModel
+{
+    _expandModel = expandModel;
+    [self.thumbImageView sd_setImageWithURL:kNSUrl(expandModel.thumb) placeholderImage:[UIImage imageNamed:@"home_logo01"]];
 }
 
 @end
