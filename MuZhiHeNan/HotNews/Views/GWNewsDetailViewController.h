@@ -10,4 +10,8 @@
 
 @interface GWNewsDetailViewController : UIViewController
 
+@property (nonatomic, copy) NSString *content_id;
+
+- (instancetype)initWithContentId:(NSString *)contentId;
+
 @end
