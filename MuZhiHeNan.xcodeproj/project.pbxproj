@@ -11,6 +11,8 @@
 		8D0EF7241CCDEC3800C8EFC0 /* GWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7231CCDEC3800C8EFC0 /* GWNavigationController.m */; };
 		8D0EF7271CCDF55300C8EFC0 /* GWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7261CCDF55300C8EFC0 /* GWBaseViewController.m */; };
 		8D0EF72A1CCE0C6500C8EFC0 /* GWCustonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */; };
+		8D264E6D1CD83BAD00EDDD53 /* GWNewsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D264E6C1CD83BAD00EDDD53 /* GWNewsDetailModel.m */; };
+		8D264E701CD8425700EDDD53 /* GWNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D264E6F1CD8425700EDDD53 /* GWNewsDetailViewController.m */; };
 		8DE2EA6D1CD061FA002B74EB /* UIImage+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2EA6C1CD061FA002B74EB /* UIImage+Utilities.m */; };
 		8DFCF4F81CD6F182006B046B /* GWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */; };
 		8DFCF4FC1CD6F328006B046B /* GWNewsHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF4FA1CD6F328006B046B /* GWNewsHeaderCell.m */; };
@@ -216,6 +218,10 @@
 		8D0EF7261CCDF55300C8EFC0 /* GWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWBaseViewController.m; sourceTree = "<group>"; };
 		8D0EF7281CCE0C6500C8EFC0 /* GWCustonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWCustonViewController.h; sourceTree = "<group>"; };
 		8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWCustonViewController.m; sourceTree = "<group>"; };
+		8D264E6B1CD83BAD00EDDD53 /* GWNewsDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWNewsDetailModel.h; sourceTree = "<group>"; };
+		8D264E6C1CD83BAD00EDDD53 /* GWNewsDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNewsDetailModel.m; sourceTree = "<group>"; };
+		8D264E6E1CD8425700EDDD53 /* GWNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWNewsDetailViewController.h; sourceTree = "<group>"; };
+		8D264E6F1CD8425700EDDD53 /* GWNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNewsDetailViewController.m; sourceTree = "<group>"; };
 		8DE2EA6B1CD061FA002B74EB /* UIImage+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utilities.h"; sourceTree = "<group>"; };
 		8DE2EA6C1CD061FA002B74EB /* UIImage+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utilities.m"; sourceTree = "<group>"; };
 		8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWHomeViewController.m; path = MuZhiHeNan/Home/GWHomeViewController.m; sourceTree = SOURCE_ROOT; };
@@ -1069,7 +1075,7 @@
 		C41733501CC91D99000BBBD8 /* HotNews */ = {
 			isa = PBXGroup;
 			children = (
-				C420CC401CD7942000E2E0C7 /* 新闻详情页 */,
+				C420CC401CD7942000E2E0C7 /* 12 */,
 				C401A6821CD5B5C0004A55FC /* Models */,
 				C401A67E1CD5B5A8004A55FC /* Views */,
 				C401A67D1CD5B5A0004A55FC /* ViewControllers */,
@@ -1312,20 +1318,22 @@
 			name = ThemeBundle;
 			sourceTree = "<group>";
 		};
-		C420CC401CD7942000E2E0C7 /* 新闻详情页 */ = {
+		C420CC401CD7942000E2E0C7 /* 12 */ = {
 			isa = PBXGroup;
 			children = (
 				C420CC431CD7945F00E2E0C7 /* Models */,
 				C420CC421CD7945700E2E0C7 /* Views */,
 				C420CC411CD7944500E2E0C7 /* ViewControllers */,
 			);
-			name = "新闻详情页";
+			name = 12;
 			path = Views;
 			sourceTree = "<group>";
 		};
 		C420CC411CD7944500E2E0C7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D264E6E1CD8425700EDDD53 /* GWNewsDetailViewController.h */,
+				8D264E6F1CD8425700EDDD53 /* GWNewsDetailViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -1343,6 +1351,8 @@
 		C420CC431CD7945F00E2E0C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8D264E6B1CD83BAD00EDDD53 /* GWNewsDetailModel.h */,
+				8D264E6C1CD83BAD00EDDD53 /* GWNewsDetailModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1659,6 +1669,7 @@
 				C401A6771CD5B534004A55FC /* NSObject+MJCoding.m in Sources */,
 				C41733AF1CC9270B000BBBD8 /* GWTabBarManager.m in Sources */,
 				C401A5D01CD5AC78004A55FC /* IQTitleBarButtonItem.m in Sources */,
+				8D264E6D1CD83BAD00EDDD53 /* GWNewsDetailModel.m in Sources */,
 				C41733811CC91F31000BBBD8 /* NSArray+LYAdd.m in Sources */,
 				C401A55C1CD5AC44004A55FC /* MJRefreshBackStateFooter.m in Sources */,
 				C401A5CD1CD5AC78004A55FC /* IQKeyboardReturnKeyHandler.m in Sources */,
@@ -1696,6 +1707,7 @@
 				C401A6751CD5B534004A55FC /* MJPropertyType.m in Sources */,
 				C401A5D21CD5AC78004A55FC /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				C401A5C71CD5AC78004A55FC /* IQUIScrollView+Additions.m in Sources */,
+				8D264E701CD8425700EDDD53 /* GWNewsDetailViewController.m in Sources */,
 				C41733901CC91F31000BBBD8 /* UIImage+LYAdd.m in Sources */,
 				C401A5EC1CD5AC7F004A55FC /* NSDate+DateTools.m in Sources */,
 				C41733911CC91F31000BBBD8 /* UITextField+LYAdd.m in Sources */,
