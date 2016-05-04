@@ -14,8 +14,11 @@
 #import "GWNewsHeaderCell.h"
 #import "GWAdNewsCell.h"
 #import "GWAdNewsHeaderCell.h"
+#import "GWNewsDetailViewController.h"
+#import "GWNewsStyleTwoCell.h"
+#import "GWSubjectViewController.h"
 
-@interface GWHotNewsViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface GWHotNewsViewController () <UITableViewDataSource, UITableViewDelegate, GWAdNewsHeaderCellDelegate>
 {
     NSInteger _number;
     NSInteger _offset;
@@ -73,6 +76,7 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
     [tableView registerNib:[UINib nibWithNibName:@"GWNewStyleOneCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GWNewStyleOneCell"];
     [tableView registerNib:[UINib nibWithNibName:@"GWNewsHeaderCell" bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"GWNewsHeaderCell"];
+    [tableView registerNib:[UINib nibWithNibName:@"GWNewsStyleTwoCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GWNewsStyleTwoCell"];
     //推广
     [tableView registerNib:[UINib nibWithNibName:@"GWAdNewsCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GWAdNewsCell"];
     [tableView registerClass:[GWAdNewsHeaderCell class] forHeaderFooterViewReuseIdentifier:@"GWAdNewsHeaderCell"];
@@ -103,17 +107,26 @@
         [self configureCell:adNewsCell atIndexPath:indexPath];
         return adNewsCell;
     }
-    GWNewStyleOneCell *styleOneCell = [tableView dequeueReusableCellWithIdentifier:@"GWNewStyleOneCell" forIndexPath:indexPath];
-    [self configureCell:styleOneCell atIndexPath:indexPath];
-    return styleOneCell;
+    else if (indexPath.section > 0 && indexPath.row == 0) {
+        GWNewStyleOneCell *styleOneCell = [tableView dequeueReusableCellWithIdentifier:@"GWNewStyleOneCell" forIndexPath:indexPath];
+        [self configureCell:styleOneCell atIndexPath:indexPath];
+        return styleOneCell;
+    }
+    else {
+        GWNewsStyleTwoCell *styleTwoCell = [tableView dequeueReusableCellWithIdentifier:@"GWNewsStyleTwoCell" forIndexPath:indexPath];
+        [self configureCell:styleTwoCell atIndexPath:indexPath];
+        return styleTwoCell;
+    }
+    
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
         GWAdNewsHeaderCell *adNewsHeaderCell = (GWAdNewsHeaderCell *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GWAdNewsHeaderCell"];
+        adNewsHeaderCell.delegate = self;
         adNewsHeaderCell.catname = self.titleArr[section];
-        GWNewsModel *newsModel = self.dataArr[section][0];
+        GWNewsModel *newsModel = self.expandArr[0][0];
         adNewsHeaderCell.title = newsModel.title;
         return adNewsHeaderCell;
     }
@@ -132,6 +145,10 @@
         GWAdNewsCell *adNewsCell = (GWAdNewsCell *)cell;
         adNewsCell.expandModel = self.dataArr[indexPath.section][indexPath.row];
     }
+    if ([cell isKindOfClass:[GWNewsStyleTwoCell class]]) {
+        GWNewsStyleTwoCell *styleTwoCell = (GWNewsStyleTwoCell *)cell;
+        styleTwoCell.newsModel = self.dataArr[indexPath.section][indexPath.row];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -141,15 +158,37 @@
             [self configureCell:cell atIndexPath:indexPath];
         }];
     }
-    return [tableView fd_heightForCellWithIdentifier:@"GWNewStyleOneCell" cacheByIndexPath:indexPath configuration:^(id cell) {
-        [self configureCell:cell atIndexPath:indexPath];
-    }];
+    else if (indexPath.section > 0 && indexPath.row == 0)
+    {
+        return [tableView fd_heightForCellWithIdentifier:@"GWNewStyleOneCell" cacheByIndexPath:indexPath configuration:^(id cell) {
+            [self configureCell:cell atIndexPath:indexPath];
+        }];
+    }
+    else
+    {
+        return [tableView fd_heightForCellWithIdentifier:@"GWNewsStyleTwoCell" cacheByIndexPath:indexPath configuration:^(id cell) {
+            [self configureCell:cell atIndexPath:indexPath];
+        }];
+    }
 }
 
 #pragma mark -UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.selected = NO;
+    if (indexPath.section == 0) {
+        GWExpandModel *expandModel = self.dataArr[indexPath.section][indexPath.row];
+        GWSubjectViewController *subjectVC = [[GWSubjectViewController alloc] initWithSpecialId:expandModel.special_id];
+        [self.navigationController pushViewController:subjectVC animated:YES];
+    }
+    else
+    {
+        GWNewsModel *newsModel = self.dataArr[indexPath.section][indexPath.row];
+        GWNewsDetailViewController *newsDetailVC = [[GWNewsDetailViewController alloc] initWithContentId:newsModel.content_id];
+        [self.navigationController pushViewController:newsDetailVC animated:YES];
+    }
     
 }
 
@@ -170,8 +209,8 @@
         NSArray *tuiguangArr = responseObject[0][@"tuiguang"];
         NSMutableArray *tuiguangModelArr = [NSMutableArray array];
         for (NSDictionary *dict in tuiguangArr) {
-            GWExpandModel *expandModel = [GWExpandModel expandModelWithDict:dict];
-            [tuiguangModelArr addObject:expandModel];
+            GWNewsModel *newsModel = [GWNewsModel newsModelWithDict:dict];
+            [tuiguangModelArr addObject:newsModel];
         }
         [self.titleArr addObject:@"推广"];
         [self.expandArr addObject:tuiguangModelArr];
@@ -180,7 +219,7 @@
         NSArray *zhuantiArr = responseObject[0][@"zhuanti"];
         NSMutableArray *zhuantiModelArr = [NSMutableArray array];
         for (NSDictionary *dict in zhuantiArr) {
-            GWNewsModel *news = [GWNewsModel newsModelWithDict:dict];
+            GWExpandModel *news = [GWExpandModel expandModelWithDict:dict];
             [zhuantiModelArr addObject:news];
         }
 //        [self.titleArr addObject:@"专题"];
@@ -231,6 +270,14 @@
         
     }];
     
+}
+
+#pragma mark -GWAdNewsHeaderCellDelegate
+- (void)adNewsHeaderCell:(GWAdNewsHeaderCell *)adNewsHeaderCell
+{
+    GWNewsModel *newsModel = self.expandArr[0][0];
+    GWNewsDetailViewController *newsDetailVC = [[GWNewsDetailViewController alloc] initWithContentId:newsModel.content_id];
+    [self.navigationController pushViewController:newsDetailVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

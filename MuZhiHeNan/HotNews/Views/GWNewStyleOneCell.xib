@@ -14,18 +14,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="193"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3AF-lI-Rh3">
-                        <rect key="frame" x="10" y="10" width="300" height="110"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="100" id="SI6-HT-nB7"/>
-                            <constraint firstAttribute="height" constant="110" id="nn8-3C-GpA"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="SI6-HT-nB7"/>
-                            </mask>
-                        </variation>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVb-n7-Jl4">
                         <rect key="frame" x="10" y="130" width="300" height="31"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -51,6 +39,18 @@
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3AF-lI-Rh3">
+                        <rect key="frame" x="10" y="8" width="300" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="SI6-HT-nB7"/>
+                            <constraint firstAttribute="height" constant="110" id="nn8-3C-GpA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SI6-HT-nB7"/>
+                            </mask>
+                        </variation>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3AQ-zO-l2M" firstAttribute="centerY" secondItem="JbR-zT-xtV" secondAttribute="centerY" id="4KX-Xe-zch"/>

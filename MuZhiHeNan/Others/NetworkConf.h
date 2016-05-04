@@ -19,6 +19,11 @@
 #define kToken @"8de8af6f01e8a9b8b2a649a9"
 #define kGetReDianData @"/v9/content/getposition"
 
+#define kGetCategoryList @"/v1/content/GetCategoryList"
+
+#define kGetSpecialContent @"/v1/content/getSpecialContent"
+
+
 //新闻详情
 #define kGetNewsDetail @"/v1/content/getnewsbyid"
 #endif /* NetworkConf_h */

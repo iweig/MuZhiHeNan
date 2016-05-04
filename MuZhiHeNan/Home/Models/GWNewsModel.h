@@ -19,7 +19,7 @@
 @property (nonatomic, copy) NSString *catname;
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *cotent_id;
+@property (nonatomic, copy) NSString *content_id;
 @property (nonatomic, copy) NSString *internal_type;
 @property (nonatomic, copy) NSString *created;
 @property (nonatomic, copy) NSString *updated;

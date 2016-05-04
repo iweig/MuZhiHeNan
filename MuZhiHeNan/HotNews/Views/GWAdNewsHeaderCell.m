@@ -63,7 +63,9 @@
 
 - (void)btnClick
 {
-    NSLog(@"GWAdNewsHeaderCell");
+    if (_delegate && [_delegate respondsToSelector:@selector(adNewsHeaderCell:)]) {
+        [_delegate adNewsHeaderCell:self];
+    }
 }
 
 @end

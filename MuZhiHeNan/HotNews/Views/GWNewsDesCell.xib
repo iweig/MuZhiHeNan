@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GWNewsDesCell" rowHeight="95" id="KGk-i7-Jjw" customClass="GWNewsDesCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lma-pF-zgb" userLabel="title">
+                        <rect key="frame" x="10" y="8" width="300" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jG0-fU-9aJ" userLabel="copyfrom">
+                        <rect key="frame" x="10" y="43" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bad-bX-Viz" userLabel="createTime">
+                        <rect key="frame" x="54" y="43" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="details_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="McD-i3-E7h">
+                        <rect key="frame" x="10" y="70" width="186" height="4"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="details_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="kLP-KE-Q5P">
+                        <rect key="frame" x="250" y="70" width="60" height="4"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="pF3-i2-BSP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAZ-q6-tMt">
+                        <rect key="frame" x="202" y="61" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aAZ-q6-tMt" firstAttribute="centerY" secondItem="McD-i3-E7h" secondAttribute="centerY" id="141-vX-hLC"/>
+                    <constraint firstItem="Bad-bX-Viz" firstAttribute="centerY" secondItem="jG0-fU-9aJ" secondAttribute="centerY" id="88Q-zI-LmJ"/>
+                    <constraint firstItem="lma-pF-zgb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="GfN-pn-cYK"/>
+                    <constraint firstItem="McD-i3-E7h" firstAttribute="leading" secondItem="lma-pF-zgb" secondAttribute="leading" id="IGo-fB-Oll"/>
+                    <constraint firstItem="kLP-KE-Q5P" firstAttribute="trailing" secondItem="lma-pF-zgb" secondAttribute="trailing" id="IKa-I9-Sby"/>
+                    <constraint firstAttribute="trailing" secondItem="lma-pF-zgb" secondAttribute="trailing" constant="10" id="RWM-RU-QBq"/>
+                    <constraint firstAttribute="bottom" secondItem="aAZ-q6-tMt" secondAttribute="bottom" constant="8" id="Tih-hC-Uic"/>
+                    <constraint firstItem="kLP-KE-Q5P" firstAttribute="leading" secondItem="aAZ-q6-tMt" secondAttribute="trailing" constant="6" id="YP3-SS-AyV"/>
+                    <constraint firstItem="jG0-fU-9aJ" firstAttribute="top" secondItem="lma-pF-zgb" secondAttribute="bottom" constant="14" id="bm5-az-SWz"/>
+                    <constraint firstItem="Bad-bX-Viz" firstAttribute="leading" secondItem="jG0-fU-9aJ" secondAttribute="trailing" constant="8" id="gdl-d6-8xt"/>
+                    <constraint firstItem="kLP-KE-Q5P" firstAttribute="centerY" secondItem="McD-i3-E7h" secondAttribute="centerY" id="nHS-RQ-ExK"/>
+                    <constraint firstItem="McD-i3-E7h" firstAttribute="top" secondItem="Bad-bX-Viz" secondAttribute="bottom" constant="10" id="qUP-Sq-ldP"/>
+                    <constraint firstItem="lma-pF-zgb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tJf-h1-Bon"/>
+                    <constraint firstItem="jG0-fU-9aJ" firstAttribute="leading" secondItem="lma-pF-zgb" secondAttribute="leading" id="vb4-f2-RSX"/>
+                    <constraint firstItem="aAZ-q6-tMt" firstAttribute="leading" secondItem="McD-i3-E7h" secondAttribute="trailing" constant="6" id="y6S-ql-AWi"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Tih-hC-Uic"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblCatname" destination="aAZ-q6-tMt" id="Mt1-ph-aHF"/>
+                <outlet property="lblCopyFrom" destination="jG0-fU-9aJ" id="467-Gf-fEq"/>
+                <outlet property="lblTime" destination="Bad-bX-Viz" id="62U-v7-HZV"/>
+                <outlet property="lblTitle" destination="lma-pF-zgb" id="8pg-JX-iBw"/>
+            </connections>
+            <point key="canvasLocation" x="315" y="268.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="details_left.png" width="226" height="4"/>
+        <image name="details_right.png" width="44" height="4"/>
+    </resources>
+</document>

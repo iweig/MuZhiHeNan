@@ -12,6 +12,8 @@
 #import "SDCycleScrollView.h"
 #import "GWNewsModel.h"
 #import "GWCategoryHeaderReusableView.h"
+#import "GWNewsDetailViewController.h"
+#import "GWCategoryListViewController.h"
 
 #define kMinimumInteritemSpacing 1
 #define kMinimumLineSpacing 1
@@ -142,13 +144,20 @@
 #pragma mark -UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%@",indexPath);
+    GWCategoryModel *catModel = self.modelArr[indexPath.section];
+    
+    GWChildredCategoryModel *childCatModel = catModel.childrenArr[indexPath.row];
+    
+    GWCategoryListViewController *catListVC = [[GWCategoryListViewController alloc] initWithCatId:childCatModel.catId];
+    [self.navigationController pushViewController:catListVC animated:YES];
 }
 
 #pragma mark -SDCycleScrollViewDelegate
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
-    NSLog(@"%ld",index);
+    GWNewsModel *newsModel = self.adsArr[index];
+    GWNewsDetailViewController *newsDetailVC = [[GWNewsDetailViewController alloc] initWithContentId:newsModel.content_id];
+    [self.navigationController pushViewController:newsDetailVC animated:YES];
 }
 
 #pragma mark -网络请求

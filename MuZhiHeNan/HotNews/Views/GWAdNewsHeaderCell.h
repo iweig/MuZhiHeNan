@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class GWAdNewsHeaderCell;
+
+@protocol GWAdNewsHeaderCellDelegate <NSObject>
+
+- (void)adNewsHeaderCell:(GWAdNewsHeaderCell *)adNewsHeaderCell;
+
+@end
 
 @interface GWAdNewsHeaderCell : UITableViewHeaderFooterView
+
+@property (nonatomic, weak) id<GWAdNewsHeaderCellDelegate> delegate;
 
 @property (nonatomic, copy) NSString *catname;
 @property (nonatomic, copy) NSString *title;

@@ -13,6 +13,20 @@
 		8D0EF72A1CCE0C6500C8EFC0 /* GWCustonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EF7291CCE0C6500C8EFC0 /* GWCustonViewController.m */; };
 		8D264E6D1CD83BAD00EDDD53 /* GWNewsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D264E6C1CD83BAD00EDDD53 /* GWNewsDetailModel.m */; };
 		8D264E701CD8425700EDDD53 /* GWNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D264E6F1CD8425700EDDD53 /* GWNewsDetailViewController.m */; };
+		8D275FA91CD98ECE00248292 /* GWNewsContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D275FA81CD98ECE00248292 /* GWNewsContentCell.m */; };
+		8D275FAF1CD9C68800248292 /* GWCategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D275FAE1CD9C68800248292 /* GWCategoryListViewController.m */; };
+		8D275FB31CD9CD2800248292 /* GWNewsStyleTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D275FB11CD9CD2800248292 /* GWNewsStyleTwoCell.m */; };
+		8D275FB41CD9CD2800248292 /* GWNewsStyleTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D275FB21CD9CD2800248292 /* GWNewsStyleTwoCell.xib */; };
+		8D275FB71CD9E06200248292 /* GWSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D275FB61CD9E06200248292 /* GWSubjectViewController.m */; };
+		8DE0480E1CD9E67300BD8CDD /* GWSubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE0480D1CD9E67300BD8CDD /* GWSubjectModel.m */; };
+		8DE048121CD9ED9400BD8CDD /* GWSubjectHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE048101CD9ED9400BD8CDD /* GWSubjectHeaderCell.m */; };
+		8DE048131CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE048111CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib */; };
+		8DE048161CD9F12600BD8CDD /* top_circle01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DE048141CD9F12600BD8CDD /* top_circle01@2x.png */; };
+		8DE048171CD9F12600BD8CDD /* top_circle01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DE048151CD9F12600BD8CDD /* top_circle01@3x.png */; };
+		8DE0481B1CD9F5A100BD8CDD /* GWSubjectDesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE048191CD9F5A100BD8CDD /* GWSubjectDesView.m */; };
+		8DE0481C1CD9F5A100BD8CDD /* GWSubjectDesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE0481A1CD9F5A100BD8CDD /* GWSubjectDesView.xib */; };
+		8DE0481E1CD9F91C00BD8CDD /* btn_zhuanti01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DE0481D1CD9F91C00BD8CDD /* btn_zhuanti01@2x.png */; };
+		8DE048201CD9F91F00BD8CDD /* btn_zhuanti01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DE0481F1CD9F91F00BD8CDD /* btn_zhuanti01@3x.png */; };
 		8DE2EA6D1CD061FA002B74EB /* UIImage+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2EA6C1CD061FA002B74EB /* UIImage+Utilities.m */; };
 		8DFCF4F81CD6F182006B046B /* GWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */; };
 		8DFCF4FC1CD6F328006B046B /* GWNewsHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCF4FA1CD6F328006B046B /* GWNewsHeaderCell.m */; };
@@ -157,8 +171,8 @@
 		C41733BD1CC92F91000BBBD8 /* theme_blue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C41733BB1CC92F91000BBBD8 /* theme_blue.bundle */; };
 		C41733BE1CC92F91000BBBD8 /* theme_dark.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C41733BC1CC92F91000BBBD8 /* theme_dark.bundle */; };
 		C41733C01CC92F97000BBBD8 /* theme_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C41733BF1CC92F97000BBBD8 /* theme_pink.bundle */; };
-		C420CC471CD794A100E2E0C7 /* GWNewsDetailHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C420CC451CD794A100E2E0C7 /* GWNewsDetailHeaderCell.m */; };
-		C420CC481CD794A100E2E0C7 /* GWNewsDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C420CC461CD794A100E2E0C7 /* GWNewsDetailHeaderCell.xib */; };
+		C420CC471CD794A100E2E0C7 /* GWNewsDesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C420CC451CD794A100E2E0C7 /* GWNewsDesCell.m */; };
+		C420CC481CD794A100E2E0C7 /* GWNewsDesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C420CC461CD794A100E2E0C7 /* GWNewsDesCell.xib */; };
 		C420CC4E1CD795F000E2E0C7 /* details_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C420CC4A1CD795F000E2E0C7 /* details_left@2x.png */; };
 		C420CC4F1CD795F000E2E0C7 /* details_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C420CC4B1CD795F000E2E0C7 /* details_left@3x.png */; };
 		C420CC501CD795F000E2E0C7 /* details_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C420CC4C1CD795F000E2E0C7 /* details_right@2x.png */; };
@@ -222,6 +236,27 @@
 		8D264E6C1CD83BAD00EDDD53 /* GWNewsDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNewsDetailModel.m; sourceTree = "<group>"; };
 		8D264E6E1CD8425700EDDD53 /* GWNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWNewsDetailViewController.h; sourceTree = "<group>"; };
 		8D264E6F1CD8425700EDDD53 /* GWNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNewsDetailViewController.m; sourceTree = "<group>"; };
+		8D275FA71CD98ECE00248292 /* GWNewsContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWNewsContentCell.h; sourceTree = "<group>"; };
+		8D275FA81CD98ECE00248292 /* GWNewsContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNewsContentCell.m; sourceTree = "<group>"; };
+		8D275FAD1CD9C68800248292 /* GWCategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWCategoryListViewController.h; path = MuZhiHeNan/HotNews/Views/GWCategoryListViewController.h; sourceTree = SOURCE_ROOT; };
+		8D275FAE1CD9C68800248292 /* GWCategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWCategoryListViewController.m; path = MuZhiHeNan/HotNews/Views/GWCategoryListViewController.m; sourceTree = SOURCE_ROOT; };
+		8D275FB01CD9CD2800248292 /* GWNewsStyleTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWNewsStyleTwoCell.h; sourceTree = "<group>"; };
+		8D275FB11CD9CD2800248292 /* GWNewsStyleTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNewsStyleTwoCell.m; sourceTree = "<group>"; };
+		8D275FB21CD9CD2800248292 /* GWNewsStyleTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWNewsStyleTwoCell.xib; sourceTree = "<group>"; };
+		8D275FB51CD9E06200248292 /* GWSubjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWSubjectViewController.h; path = MuZhiHeNan/HotNews/Views/GWSubjectViewController.h; sourceTree = SOURCE_ROOT; };
+		8D275FB61CD9E06200248292 /* GWSubjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWSubjectViewController.m; path = MuZhiHeNan/HotNews/Views/GWSubjectViewController.m; sourceTree = SOURCE_ROOT; };
+		8DE0480C1CD9E67300BD8CDD /* GWSubjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWSubjectModel.h; path = MuZhiHeNan/HotNews/Views/GWSubjectModel.h; sourceTree = SOURCE_ROOT; };
+		8DE0480D1CD9E67300BD8CDD /* GWSubjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWSubjectModel.m; path = MuZhiHeNan/HotNews/Views/GWSubjectModel.m; sourceTree = SOURCE_ROOT; };
+		8DE0480F1CD9ED9400BD8CDD /* GWSubjectHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSubjectHeaderCell.h; sourceTree = "<group>"; };
+		8DE048101CD9ED9400BD8CDD /* GWSubjectHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSubjectHeaderCell.m; sourceTree = "<group>"; };
+		8DE048111CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWSubjectHeaderCell.xib; sourceTree = "<group>"; };
+		8DE048141CD9F12600BD8CDD /* top_circle01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_circle01@2x.png"; sourceTree = "<group>"; };
+		8DE048151CD9F12600BD8CDD /* top_circle01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_circle01@3x.png"; sourceTree = "<group>"; };
+		8DE048181CD9F5A100BD8CDD /* GWSubjectDesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSubjectDesView.h; sourceTree = "<group>"; };
+		8DE048191CD9F5A100BD8CDD /* GWSubjectDesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSubjectDesView.m; sourceTree = "<group>"; };
+		8DE0481A1CD9F5A100BD8CDD /* GWSubjectDesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWSubjectDesView.xib; sourceTree = "<group>"; };
+		8DE0481D1CD9F91C00BD8CDD /* btn_zhuanti01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_zhuanti01@2x.png"; sourceTree = "<group>"; };
+		8DE0481F1CD9F91F00BD8CDD /* btn_zhuanti01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_zhuanti01@3x.png"; sourceTree = "<group>"; };
 		8DE2EA6B1CD061FA002B74EB /* UIImage+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utilities.h"; sourceTree = "<group>"; };
 		8DE2EA6C1CD061FA002B74EB /* UIImage+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utilities.m"; sourceTree = "<group>"; };
 		8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWHomeViewController.m; path = MuZhiHeNan/Home/GWHomeViewController.m; sourceTree = SOURCE_ROOT; };
@@ -506,9 +541,9 @@
 		C41733BC1CC92F91000BBBD8 /* theme_dark.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = theme_dark.bundle; sourceTree = "<group>"; };
 		C41733BF1CC92F97000BBBD8 /* theme_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = theme_pink.bundle; sourceTree = "<group>"; };
 		C41733C31CC931C2000BBBD8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		C420CC441CD794A100E2E0C7 /* GWNewsDetailHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWNewsDetailHeaderCell.h; sourceTree = "<group>"; };
-		C420CC451CD794A100E2E0C7 /* GWNewsDetailHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNewsDetailHeaderCell.m; sourceTree = "<group>"; };
-		C420CC461CD794A100E2E0C7 /* GWNewsDetailHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWNewsDetailHeaderCell.xib; sourceTree = "<group>"; };
+		C420CC441CD794A100E2E0C7 /* GWNewsDesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWNewsDesCell.h; sourceTree = "<group>"; };
+		C420CC451CD794A100E2E0C7 /* GWNewsDesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWNewsDesCell.m; sourceTree = "<group>"; };
+		C420CC461CD794A100E2E0C7 /* GWNewsDesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWNewsDesCell.xib; sourceTree = "<group>"; };
 		C420CC4A1CD795F000E2E0C7 /* details_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "details_left@2x.png"; sourceTree = "<group>"; };
 		C420CC4B1CD795F000E2E0C7 /* details_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "details_left@3x.png"; sourceTree = "<group>"; };
 		C420CC4C1CD795F000E2E0C7 /* details_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "details_right@2x.png"; sourceTree = "<group>"; };
@@ -942,8 +977,10 @@
 		C401A67B1CD5B582004A55FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */,
 				8DFCF4F71CD6F182006B046B /* GWHomeViewController.h */,
+				8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */,
+				8D275FAD1CD9C68800248292 /* GWCategoryListViewController.h */,
+				8D275FAE1CD9C68800248292 /* GWCategoryListViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -958,6 +995,8 @@
 		C401A67D1CD5B5A0004A55FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D275FB51CD9E06200248292 /* GWSubjectViewController.h */,
+				8D275FB61CD9E06200248292 /* GWSubjectViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -968,6 +1007,9 @@
 				C4617A611CD649C400DF1D74 /* GWNewStyleOneCell.h */,
 				C4617A621CD649C400DF1D74 /* GWNewStyleOneCell.m */,
 				C4617A631CD649C400DF1D74 /* GWNewStyleOneCell.xib */,
+				8D275FB01CD9CD2800248292 /* GWNewsStyleTwoCell.h */,
+				8D275FB11CD9CD2800248292 /* GWNewsStyleTwoCell.m */,
+				8D275FB21CD9CD2800248292 /* GWNewsStyleTwoCell.xib */,
 				8DFCF4F91CD6F328006B046B /* GWNewsHeaderCell.h */,
 				8DFCF4FA1CD6F328006B046B /* GWNewsHeaderCell.m */,
 				8DFCF4FB1CD6F328006B046B /* GWNewsHeaderCell.xib */,
@@ -976,6 +1018,12 @@
 				8DFCF5151CD7417D006B046B /* GWAdNewsCell.h */,
 				8DFCF5161CD7417D006B046B /* GWAdNewsCell.m */,
 				8DFCF5171CD7417D006B046B /* GWAdNewsCell.xib */,
+				8DE0480F1CD9ED9400BD8CDD /* GWSubjectHeaderCell.h */,
+				8DE048101CD9ED9400BD8CDD /* GWSubjectHeaderCell.m */,
+				8DE048111CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib */,
+				8DE048181CD9F5A100BD8CDD /* GWSubjectDesView.h */,
+				8DE048191CD9F5A100BD8CDD /* GWSubjectDesView.m */,
+				8DE0481A1CD9F5A100BD8CDD /* GWSubjectDesView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1018,6 +1066,8 @@
 			children = (
 				8DFCF51A1CD74E28006B046B /* GWExpandModel.h */,
 				8DFCF51B1CD74E28006B046B /* GWExpandModel.m */,
+				8DE0480C1CD9E67300BD8CDD /* GWSubjectModel.h */,
+				8DE0480D1CD9E67300BD8CDD /* GWSubjectModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1341,9 +1391,11 @@
 		C420CC421CD7945700E2E0C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C420CC441CD794A100E2E0C7 /* GWNewsDetailHeaderCell.h */,
-				C420CC451CD794A100E2E0C7 /* GWNewsDetailHeaderCell.m */,
-				C420CC461CD794A100E2E0C7 /* GWNewsDetailHeaderCell.xib */,
+				C420CC441CD794A100E2E0C7 /* GWNewsDesCell.h */,
+				C420CC451CD794A100E2E0C7 /* GWNewsDesCell.m */,
+				C420CC461CD794A100E2E0C7 /* GWNewsDesCell.xib */,
+				8D275FA71CD98ECE00248292 /* GWNewsContentCell.h */,
+				8D275FA81CD98ECE00248292 /* GWNewsContentCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1360,6 +1412,10 @@
 		C420CC491CD795E000E2E0C7 /* 新闻详情 */ = {
 			isa = PBXGroup;
 			children = (
+				8DE0481D1CD9F91C00BD8CDD /* btn_zhuanti01@2x.png */,
+				8DE0481F1CD9F91F00BD8CDD /* btn_zhuanti01@3x.png */,
+				8DE048141CD9F12600BD8CDD /* top_circle01@2x.png */,
+				8DE048151CD9F12600BD8CDD /* top_circle01@3x.png */,
 				C420CC761CD796D500E2E0C7 /* xian@2x.png */,
 				C420CC771CD796D500E2E0C7 /* xian@3x.png */,
 				C420CC561CD7969A00E2E0C7 /* tab_fanhui@2x.png */,
@@ -1499,6 +1555,7 @@
 				TargetAttributes = {
 					C470382B1CC85E3000DC5ED2 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = BBT6WV4U8A;
 					};
 				};
 			};
@@ -1529,18 +1586,22 @@
 				8DFCF5191CD7417D006B046B /* GWAdNewsCell.xib in Resources */,
 				C420CC6D1CD7969A00E2E0C7 /* tab_shoucang_h@3x.png in Resources */,
 				C420CC4E1CD795F000E2E0C7 /* details_left@2x.png in Resources */,
-				C420CC481CD794A100E2E0C7 /* GWNewsDetailHeaderCell.xib in Resources */,
+				C420CC481CD794A100E2E0C7 /* GWNewsDesCell.xib in Resources */,
 				8DFCF5111CD72EE9006B046B /* biaoqian_01@3x.png in Resources */,
+				8DE048171CD9F12600BD8CDD /* top_circle01@3x.png in Resources */,
 				C401A5D31CD5AC78004A55FC /* IQKeyboardManager.bundle in Resources */,
+				8D275FB41CD9CD2800248292 /* GWNewsStyleTwoCell.xib in Resources */,
 				8DFCF4FD1CD6F328006B046B /* GWNewsHeaderCell.xib in Resources */,
 				C401A6A81CD5C556004A55FC /* GWChildredCategoryCell.xib in Resources */,
 				C41733BE1CC92F91000BBBD8 /* theme_dark.bundle in Resources */,
+				8DE0481E1CD9F91C00BD8CDD /* btn_zhuanti01@2x.png in Resources */,
 				C420CC541CD7962600E2E0C7 /* fanhui@2x.png in Resources */,
 				C401A6301CD5ACBD004A55FC /* ProgressHUD.bundle in Resources */,
 				C401A6AC1CD5C6CE004A55FC /* placeholderImage3x.png in Resources */,
 				C420CC711CD7969A00E2E0C7 /* tab_zan_h@3x.png in Resources */,
 				C470383F1CC85E3000DC5ED2 /* LaunchScreen.storyboard in Resources */,
 				C420CC6C1CD7969A00E2E0C7 /* tab_shoucang_h@2x.png in Resources */,
+				8DE048161CD9F12600BD8CDD /* top_circle01@2x.png in Resources */,
 				C420CC781CD796D500E2E0C7 /* xian@2x.png in Resources */,
 				C420CC501CD795F000E2E0C7 /* details_right@2x.png in Resources */,
 				C41733BD1CC92F91000BBBD8 /* theme_blue.bundle in Resources */,
@@ -1564,6 +1625,7 @@
 				C4617A3B1CD61A2900DF1D74 /* NormalGrayIcon@2x.png in Resources */,
 				C41733BA1CC92F88000BBBD8 /* ZUIResources.bundle in Resources */,
 				C420CC791CD796D500E2E0C7 /* xian@3x.png in Resources */,
+				8DE048131CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib in Resources */,
 				C420CC671CD7969A00E2E0C7 /* tab_fanhui@3x.png in Resources */,
 				C420CC511CD795F000E2E0C7 /* details_right@3x.png in Resources */,
 				C4617A691CD64C3100DF1D74 /* home_yuedu@3x.png in Resources */,
@@ -1577,8 +1639,10 @@
 				C420CC6A1CD7969A00E2E0C7 /* tab_pinglun@2x.png in Resources */,
 				C401A5E51CD5AC7F004A55FC /* DateTools.bundle in Resources */,
 				C420CC691CD7969A00E2E0C7 /* tab_fenxiang@3x.png in Resources */,
+				8DE048201CD9F91F00BD8CDD /* btn_zhuanti01@3x.png in Resources */,
 				C401A6AB1CD5C6CE004A55FC /* placeholderImage@2x.png in Resources */,
 				C4617A651CD649C400DF1D74 /* GWNewStyleOneCell.xib in Resources */,
+				8DE0481C1CD9F5A100BD8CDD /* GWSubjectDesView.xib in Resources */,
 				C420CC6E1CD7969A00E2E0C7 /* tab_shoucang@2x.png in Resources */,
 				8DFCF5101CD72EE9006B046B /* biaoqian_01@2x.png in Resources */,
 				C420CC6F1CD7969A00E2E0C7 /* tab_shoucang@3x.png in Resources */,
@@ -1610,6 +1674,7 @@
 				C47038341CC85E3000DC5ED2 /* AppDelegate.m in Sources */,
 				C423A6091CD60C1300E637A9 /* GWNewsModel.m in Sources */,
 				C47038311CC85E3000DC5ED2 /* main.m in Sources */,
+				8D275FB71CD9E06200248292 /* GWSubjectViewController.m in Sources */,
 				C401A5531CD5AC44004A55FC /* MJRefreshBackFooter.m in Sources */,
 				C4617A5D1CD6238700DF1D74 /* TAPageControl.m in Sources */,
 				C41733921CC91F31000BBBD8 /* UIView+LYAdd.m in Sources */,
@@ -1643,7 +1708,7 @@
 				C401A5F71CD5AC8F004A55FC /* UITableView+FDKeyedHeightCache.m in Sources */,
 				C401A6521CD5ACCE004A55FC /* NSArray+MASAdditions.m in Sources */,
 				C401A5E91CD5AC7F004A55FC /* DTTimePeriodChain.m in Sources */,
-				C420CC471CD794A100E2E0C7 /* GWNewsDetailHeaderCell.m in Sources */,
+				C420CC471CD794A100E2E0C7 /* GWNewsDesCell.m in Sources */,
 				C401A5CE1CD5AC78004A55FC /* IQTextView.m in Sources */,
 				C41733AC1CC9242F000BBBD8 /* GWAppViewController.m in Sources */,
 				8D0EF7271CCDF55300C8EFC0 /* GWBaseViewController.m in Sources */,
@@ -1660,9 +1725,11 @@
 				C41733841CC91F31000BBBD8 /* NSDate+LYAdd.m in Sources */,
 				C401A6501CD5ACCE004A55FC /* MASViewAttribute.m in Sources */,
 				C401A55B1CD5AC44004A55FC /* MJRefreshBackNormalFooter.m in Sources */,
+				8DE048121CD9ED9400BD8CDD /* GWSubjectHeaderCell.m in Sources */,
 				C401A5C61CD5AC78004A55FC /* IQNSArray+Sort.m in Sources */,
 				C401A61D1CD5ACA7004A55FC /* NSData+ImageContentType.m in Sources */,
 				C401A5CC1CD5AC78004A55FC /* IQKeyboardManager.m in Sources */,
+				8D275FAF1CD9C68800248292 /* GWCategoryListViewController.m in Sources */,
 				C401A55E1CD5AC44004A55FC /* MJRefreshNormalHeader.m in Sources */,
 				C401A5A01CD5AC56004A55FC /* AFURLResponseSerialization.m in Sources */,
 				C401A5D11CD5AC78004A55FC /* IQToolbar.m in Sources */,
@@ -1716,6 +1783,7 @@
 				8D0414851CCDC43300235F50 /* GWBundleManager.m in Sources */,
 				8D0EF72A1CCE0C6500C8EFC0 /* GWCustonViewController.m in Sources */,
 				C41733881CC91F31000BBBD8 /* NSMutableDictionary+LYAdd.m in Sources */,
+				8D275FB31CD9CD2800248292 /* GWNewsStyleTwoCell.m in Sources */,
 				C401A61C1CD5ACA7004A55FC /* MKAnnotationView+WebCache.m in Sources */,
 				C4FEC3C01CD5FA88003763F3 /* GWCategoryHeaderReusableView.m in Sources */,
 				C401A5561CD5AC44004A55FC /* MJRefreshHeader.m in Sources */,
@@ -1724,12 +1792,15 @@
 				C417338A1CC91F31000BBBD8 /* NSMutableURLRequest+LYAdd.m in Sources */,
 				C401A62A1CD5ACA7004A55FC /* UIImageView+WebCache.m in Sources */,
 				C401A5631CD5AC44004A55FC /* UIScrollView+MJRefresh.m in Sources */,
+				8D275FA91CD98ECE00248292 /* GWNewsContentCell.m in Sources */,
 				C401A59D1CD5AC56004A55FC /* AFSecurityPolicy.m in Sources */,
 				C401A64C1CD5ACCE004A55FC /* MASCompositeConstraint.m in Sources */,
 				C401A5521CD5AC44004A55FC /* MJRefreshAutoFooter.m in Sources */,
 				C401A6311CD5ACBD004A55FC /* ProgressHUD.m in Sources */,
 				C423A6061CD608DF00E637A9 /* UIColor+ColorTransform.m in Sources */,
 				8DFCF5141CD73F3E006B046B /* GWAdNewsHeaderCell.m in Sources */,
+				8DE0480E1CD9E67300BD8CDD /* GWSubjectModel.m in Sources */,
+				8DE0481B1CD9F5A100BD8CDD /* GWSubjectDesView.m in Sources */,
 				C41733851CC91F31000BBBD8 /* NSDictionary+LYAdd.m in Sources */,
 				C401A6211CD5ACA7004A55FC /* SDWebImageDownloader.m in Sources */,
 				C4617A5A1CD6238700DF1D74 /* TAAbstractDotView.m in Sources */,
@@ -1836,12 +1907,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MuZhiHeNan/PrefixHeader.pch";
 				INFOPLIST_FILE = MuZhiHeNan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gw.MuZhiHeNan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boding.MuZhiHeNan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1850,12 +1922,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MuZhiHeNan/PrefixHeader.pch";
 				INFOPLIST_FILE = MuZhiHeNan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gw.MuZhiHeNan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boding.MuZhiHeNan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
