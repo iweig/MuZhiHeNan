@@ -10,12 +10,15 @@
 #import "GWSubjectModel.h"
 #import "GWNewStyleOneCell.h"
 #import "GWSubjectHeaderCell.h"
+#import "GWSubjectDesView.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 
-@interface GWSubjectViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface GWSubjectViewController () <UITableViewDataSource, UITableViewDelegate, GWSubjectDesViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSDictionary *dataDict;
+
+@property (nonatomic ,strong) GWSubjectDesView *desView;
 
 @end
 
@@ -24,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self setupUI];
     [self getData];
 }
@@ -47,6 +50,7 @@
     [tableView registerNib:[UINib nibWithNibName:@"GWSubjectHeaderCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GWSubjectHeaderCell"];
     [self.view addSubview:tableView];
     self.tableView = tableView;
+
 }
 
 #pragma mark -UITableViewDataSource
@@ -116,9 +120,26 @@
         [dict setObject:modelArr forKey:@"lists"];
         weakSelf.dataDict = dict;
         [weakSelf.tableView reloadData];
+        [weakSelf loadSubjectDes];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
     }];
+}
+
+#pragma mark -GWSubjectDesViewDelegate
+- (void)subjectDesView:(GWSubjectDesView *)view selectedIndex:(NSInteger)index
+{
+
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+}
+
+- (void)loadSubjectDes
+{
+    GWSubjectDesView *desView = [GWSubjectDesView getSubjectDesView];
+    desView.dict = self.dataDict;
+    desView.delegate = self;
+    self.tableView.tableHeaderView = desView;
+    self.desView = desView;
 }
 
 @end

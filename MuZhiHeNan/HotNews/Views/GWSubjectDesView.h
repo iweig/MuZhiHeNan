@@ -8,9 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class GWSubjectDesView;
+
+@protocol GWSubjectDesViewDelegate <NSObject>
+
+- (void)subjectDesView:(GWSubjectDesView *)view selectedIndex:(NSInteger)index;
+
+@end
 
 @interface GWSubjectDesView : UITableViewCell
 
 @property (nonatomic, strong) NSDictionary *dict;
+
+@property (nonatomic, weak) id<GWSubjectDesViewDelegate> delegate;
+
++ (instancetype)getSubjectDesView;
 
 @end
