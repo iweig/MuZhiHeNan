@@ -12,13 +12,21 @@
 #import "GWSubjectHeaderCell.h"
 #import "GWSubjectDesView.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "GWNewsDetailViewController.h"
+
+#define kBtnReturnTopFrame CGRectMake(kScreenSize.width - 60, kScreenSize.height + 50, 44, 44)
 
 @interface GWSubjectViewController () <UITableViewDataSource, UITableViewDelegate, GWSubjectDesViewDelegate>
+{
+    CGFloat _lastOffsetY;
+}
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSDictionary *dataDict;
 
 @property (nonatomic ,strong) GWSubjectDesView *desView;
+
+@property (nonatomic, strong) UIButton *btnReturnTop;
 
 @end
 
@@ -45,11 +53,17 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.sectionHeaderHeight = 25;
+    tableView.sectionHeaderHeight = 30;
     [tableView registerNib:[UINib nibWithNibName:@"GWNewStyleOneCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GWNewStyleOneCell"];
     [tableView registerNib:[UINib nibWithNibName:@"GWSubjectHeaderCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GWSubjectHeaderCell"];
     [self.view addSubview:tableView];
     self.tableView = tableView;
+    
+    UIButton *btnReturnTop = [[UIButton alloc] initWithFrame:kBtnReturnTopFrame];
+    [btnReturnTop setBackgroundImage:[UIImage imageNamed:@"btn_top_fanhui"] forState:UIControlStateNormal];
+    [btnReturnTop addTarget:self action:@selector(onReturnTop) forControlEvents:UIControlEventTouchUpInside];
+    [self.view insertSubview:btnReturnTop aboveSubview:self.tableView];
+    self.btnReturnTop = btnReturnTop;
 
 }
 
@@ -101,6 +115,16 @@
 
 #pragma mark -UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.selected = NO;
+    GWSubjectModel *subjectModel = self.dataDict[@"lists"][indexPath.section];
+    GWNewsModel *newsModel = subjectModel.lists[indexPath.row];
+    GWNewsDetailViewController *newsDetailVC = [[GWNewsDetailViewController alloc] initWithContentId:newsModel.content_id];
+    [self.navigationController pushViewController:newsDetailVC animated:YES];
+}
+
 #pragma mark -网络请求
 - (void)getData
 {
@@ -140,6 +164,28 @@
     desView.delegate = self;
     self.tableView.tableHeaderView = desView;
     self.desView = desView;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat offsetY = scrollView.contentOffset.y;
+    if (offsetY > 30 && offsetY > _lastOffsetY) {
+        [UIView animateWithDuration:0.25 animations:^{
+            self.btnReturnTop.frame = CGRectMake(kBtnReturnTopFrame.origin.x, kScreenSize.height - 70 - 50, kBtnReturnTopFrame.size.width, kBtnReturnTopFrame.size.height);
+        }];
+    }
+    else if(offsetY > 20)
+    {
+        [UIView animateWithDuration:0.25 animations:^{
+            self.btnReturnTop.frame = kBtnReturnTopFrame;
+        }];
+    }
+    _lastOffsetY = offsetY;
+}
+
+- (void)onReturnTop
+{
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 }
 
 @end

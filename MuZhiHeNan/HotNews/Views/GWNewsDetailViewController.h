@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GWNewsDetailViewController : UIViewController
+@interface GWNewsDetailViewController : GWCustonViewController
 
 @property (nonatomic, copy) NSString *content_id;
 

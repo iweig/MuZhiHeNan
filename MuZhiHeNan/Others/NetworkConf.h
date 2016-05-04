@@ -23,7 +23,10 @@
 
 #define kGetSpecialContent @"/v1/content/getSpecialContent"
 
-
+#define kGetsearchhotwords @"/v1/content/getsearchhotwords"
 //新闻详情
 #define kGetNewsDetail @"/v1/content/getnewsbyid"
+
+#define kSearch @"/v1/content/search1"
+
 #endif /* NetworkConf_h */

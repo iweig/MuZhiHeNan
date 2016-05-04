@@ -124,7 +124,6 @@
     newContentCell.hidden = YES;
     [self.view addSubview:newContentCell];
     
-    
 }
 
 #pragma mark -GWNewsContentCellDelegate

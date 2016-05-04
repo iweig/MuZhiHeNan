@@ -28,13 +28,13 @@
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(10, 7, 28, 16)];
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         btn.userInteractionEnabled = NO;
-        btn.titleLabel.font = [UIFont systemFontOfSize:10.0];
+        btn.titleLabel.font = [UIFont systemFontOfSize:14.0];
         btn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
         [self addSubview:btn];
         _btn = btn;
         
         UILabel *lblTitle = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_btn.frame) + 8, 5, kScreenSize.width - CGRectGetWidth(_btn.frame), 16)];
-        lblTitle.font = [UIFont systemFontOfSize:10.0];
+        lblTitle.font = [UIFont systemFontOfSize:16.0];
         lblTitle.center = CGPointMake(lblTitle.center.x, 15.0);
         [self addSubview:lblTitle];
         _lblTitle = lblTitle;

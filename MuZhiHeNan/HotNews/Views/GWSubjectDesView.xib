@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -7,22 +7,22 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GWSubjectDesView" rowHeight="248" id="KGk-i7-Jjw" customClass="GWSubjectDesView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GWSubjectDesView" rowHeight="290" id="KGk-i7-Jjw" customClass="GWSubjectDesView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="247"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="289"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49k-u6-Vgr">
                         <rect key="frame" x="10" y="10" width="300" height="70"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="70" id="DjF-7P-WGC"/>
+                            <constraint firstAttribute="height" constant="120" id="DjF-7P-WGC"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sln-Xi-Wxy">
                         <rect key="frame" x="10" y="117" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
@@ -77,7 +77,7 @@
                     <constraint firstItem="sln-Xi-Wxy" firstAttribute="leading" secondItem="49k-u6-Vgr" secondAttribute="leading" id="Irl-SE-NIx"/>
                     <constraint firstItem="rCm-UX-wdt" firstAttribute="centerY" secondItem="M01-Gk-pSZ" secondAttribute="centerY" id="RiI-Dx-HB2"/>
                     <constraint firstItem="49k-u6-Vgr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UeP-CV-kSc"/>
-                    <constraint firstItem="rQZ-5j-XWJ" firstAttribute="top" secondItem="49k-u6-Vgr" secondAttribute="bottom" constant="8" id="X2p-s4-9pz"/>
+                    <constraint firstItem="rQZ-5j-XWJ" firstAttribute="top" secondItem="49k-u6-Vgr" secondAttribute="bottom" constant="12" id="X2p-s4-9pz"/>
                     <constraint firstAttribute="trailing" secondItem="49k-u6-Vgr" secondAttribute="trailing" constant="10" id="YxP-YG-mQF"/>
                     <constraint firstAttribute="trailing" secondItem="rQZ-5j-XWJ" secondAttribute="trailing" constant="30" id="ekm-xb-Jhm"/>
                     <constraint firstItem="IFL-eO-saK" firstAttribute="leading" secondItem="M01-Gk-pSZ" secondAttribute="trailing" constant="20" id="gpV-G5-BvZ"/>
@@ -106,7 +106,7 @@
                 <outlet property="lblTitle" destination="rQZ-5j-XWJ" id="X53-rm-fE1"/>
                 <outlet property="thumbImageView" destination="49k-u6-Vgr" id="5bE-ci-bpA"/>
             </connections>
-            <point key="canvasLocation" x="272" y="256"/>
+            <point key="canvasLocation" x="272" y="277"/>
         </tableViewCell>
     </objects>
 </document>

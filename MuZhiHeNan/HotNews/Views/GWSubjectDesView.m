@@ -44,7 +44,7 @@
     self.lblDes.text = dict[@"brief"];
     [self.thumbImageView sd_setImageWithURL:kNSUrl(dict[@"thumb"])];
      NSArray *lists = dict[@"lists"];
-    for (NSInteger i; i < lists.count; i++) {
+    for (int i = 0; i < lists.count; i++) {
         GWSubjectModel *subModel = lists[i];
         UIButton *btn = self.btnArr[i];
         [btn setTitle:subModel.name forState:UIControlStateNormal];

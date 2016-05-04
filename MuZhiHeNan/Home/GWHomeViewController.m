@@ -14,6 +14,7 @@
 #import "GWCategoryHeaderReusableView.h"
 #import "GWNewsDetailViewController.h"
 #import "GWCategoryListViewController.h"
+#import "GWSearchViewController.h"
 
 #define kMinimumInteritemSpacing 1
 #define kMinimumLineSpacing 1
@@ -78,6 +79,10 @@
 - (void)setupUI
 {
     self.navigationItem.title = @"订阅";
+    
+    //导航栏增加搜索框
+    UIBarButtonItem *searchBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"ExploreSearchButton"] style:UIBarButtonItemStylePlain target:self action:@selector(searchAction)];
+    self.navigationItem.rightBarButtonItem = searchBtn;
     
     //初始化广告栏
     SDCycleScrollView *adScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, -200, kScreenSize.width, 200) imagesGroup:nil];
@@ -199,6 +204,13 @@
     self.adScrollView.imageURLStringsGroup = self.imageGroup;
     self.adScrollView.titlesGroup = self.titleGroup;
     [self.collectionView addSubview:self.adScrollView];
+}
+
+//搜索功能
+- (void)searchAction
+{
+    GWSearchViewController *searchVC = [[GWSearchViewController alloc] init];
+    [self.navigationController pushViewController:searchVC animated:YES];
 }
 
 @end
