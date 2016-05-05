@@ -10,6 +10,8 @@
 #import "GWNewsDesCell.h"
 #import "GWNewsDetailModel.h"
 #import "GWNewsContentCell.h"
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKUI/ShareSDK+SSUI.h>
 
 #define kBottomViewFrame CGRectMake(0, kScreenSize.height - 50 - 64, kScreenSize.width, 30)
 
@@ -178,6 +180,48 @@
         case 4:
         {
             //分享
+            //1、创建分享参数
+            NSArray* imageArray = @[[UIImage imageNamed:@"ad.jpg"]];
+            if (imageArray)
+            {
+                
+                NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
+                [shareParams SSDKSetupShareParamsByText:@"分享内容"
+                                                 images:nil
+                                                    url:[NSURL URLWithString:@"http://mob.com"]
+                                                  title:@"分享标题"
+                                                   type:SSDKContentTypeAuto];
+                //2、分享（可以弹出我们的分享菜单和编辑界面）
+                [ShareSDK showShareActionSheet:nil                                          items:nil
+                                   shareParams:shareParams
+                           onShareStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end) {
+                               
+                               switch (state) {
+                                   case SSDKResponseStateSuccess:
+                                   {
+                                       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"分享成功"
+                                                                                           message:nil
+                                                                                          delegate:nil
+                                                                                 cancelButtonTitle:@"确定"
+                                                                                 otherButtonTitles:nil];
+                                       [alertView show];
+                                       break;
+                                   }
+                                   case SSDKResponseStateFail:
+                                   {
+                                       UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败"
+                                                                                       message:[NSString stringWithFormat:@"%@",error]
+                                                                                      delegate:nil
+                                                                             cancelButtonTitle:@"OK"
+                                                                             otherButtonTitles:nil, nil];
+                                       [alert show];
+                                       break;
+                                   }
+                                   default:
+                                       break;
+                               }
+                           }
+                 ];}
         }
             break;
             
@@ -210,7 +254,7 @@
     _isChangeTextSize = YES;
     NSString *str = [self.newsDetailModel.content componentsSeparatedByString:@"font-size:"][0];
     NSString *str2 = [self.newsDetailModel.content componentsSeparatedByString:@"px;"][1];
-    NSString *content = kNSString(@"%@font-size:%ldpx;%@",str,percent,str2);
+    NSString *content = kNSString(@"%@font-size:%ldpx;%@",str,(unsigned long)percent,str2);
     self.newsDetailModel.content = content;
     [self getContentHeight];
 }
@@ -298,6 +342,13 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat offsetY = scrollView.contentOffset.y;
+    
+    if (offsetY < 0) {
+        [UIView animateWithDuration:.25 animations:^{
+            self.bottomView.frame = kBottomViewFrame;
+        }];
+    }
+    
     if (offsetY > 2 && offsetY < _lastOffsetY) {
         [UIView animateWithDuration:.25 animations:^{
             self.bottomView.frame = kBottomViewFrame;

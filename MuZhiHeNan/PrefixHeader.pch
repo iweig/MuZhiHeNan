@@ -20,6 +20,8 @@
 #import "GWNavigationController.h"
 #import "GWBundleManager.h"
 
+#define kMobKey @"11abeab9cd508"
+
 //获取NSUserDefaults
 #define kUserDefaults  NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
