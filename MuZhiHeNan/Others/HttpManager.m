@@ -51,11 +51,16 @@ static HttpManager *httpManager = nil;
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer =[AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
     manager.requestSerializer.timeoutInterval = 10.0;
     NSString *urlStr = kNSString(@"%@%@", kGlobalURL, URLString);
     [manager POST:urlStr parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if ([responseObject[@"Status"] integerValue]== 0) {
+            [ProgressHUD show:@"请求数据出错！"];
+            return;
+        }
         if (success) {
-            success(operation, responseObject);
+            success(operation, responseObject[@"Info"]);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (failure) {

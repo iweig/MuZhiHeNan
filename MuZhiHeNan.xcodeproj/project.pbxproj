@@ -18,6 +18,18 @@
 		8D275FB31CD9CD2800248292 /* GWNewsStyleTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D275FB11CD9CD2800248292 /* GWNewsStyleTwoCell.m */; };
 		8D275FB41CD9CD2800248292 /* GWNewsStyleTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D275FB21CD9CD2800248292 /* GWNewsStyleTwoCell.xib */; };
 		8D275FB71CD9E06200248292 /* GWSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D275FB61CD9E06200248292 /* GWSubjectViewController.m */; };
+		8D3285B81CDAD58700646F66 /* GWSearchInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3285B71CDAD58700646F66 /* GWSearchInfoModel.m */; };
+		8D3285BB1CDAD9F300646F66 /* GWSearchAuthorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3285BA1CDAD9F300646F66 /* GWSearchAuthorModel.m */; };
+		8D3285BF1CDADBAB00646F66 /* GWSearchContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3285BD1CDADBAB00646F66 /* GWSearchContentCell.m */; };
+		8D3285C01CDADBAB00646F66 /* GWSearchContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3285BE1CDADBAB00646F66 /* GWSearchContentCell.xib */; };
+		8D3285C41CDADBDE00646F66 /* icon_user_time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3285C21CDADBDE00646F66 /* icon_user_time@2x.png */; };
+		8D3285C51CDADBDE00646F66 /* icon_user_time@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3285C31CDADBDE00646F66 /* icon_user_time@3x.png */; };
+		8D3285C91CDADFB700646F66 /* GWSearchAuthorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3285C71CDADFB700646F66 /* GWSearchAuthorCell.m */; };
+		8D3285CA1CDADFB700646F66 /* GWSearchAuthorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3285C81CDADFB700646F66 /* GWSearchAuthorCell.xib */; };
+		8D3285CD1CDAF25000646F66 /* pic_30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3285CB1CDAF25000646F66 /* pic_30@2x.png */; };
+		8D3285CE1CDAF25000646F66 /* pic_30@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3285CC1CDAF25000646F66 /* pic_30@3x.png */; };
+		8D3285D21CDB162A00646F66 /* GWSearchSectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3285D01CDB162A00646F66 /* GWSearchSectionHeaderCell.m */; };
+		8D3285D31CDB162A00646F66 /* GWSearchSectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3285D11CDB162A00646F66 /* GWSearchSectionHeaderCell.xib */; };
 		8DE0480E1CD9E67300BD8CDD /* GWSubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE0480D1CD9E67300BD8CDD /* GWSubjectModel.m */; };
 		8DE048121CD9ED9400BD8CDD /* GWSubjectHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE048101CD9ED9400BD8CDD /* GWSubjectHeaderCell.m */; };
 		8DE048131CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE048111CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib */; };
@@ -256,6 +268,23 @@
 		8D275FB21CD9CD2800248292 /* GWNewsStyleTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWNewsStyleTwoCell.xib; sourceTree = "<group>"; };
 		8D275FB51CD9E06200248292 /* GWSubjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWSubjectViewController.h; path = MuZhiHeNan/HotNews/Views/GWSubjectViewController.h; sourceTree = SOURCE_ROOT; };
 		8D275FB61CD9E06200248292 /* GWSubjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWSubjectViewController.m; path = MuZhiHeNan/HotNews/Views/GWSubjectViewController.m; sourceTree = SOURCE_ROOT; };
+		8D3285B61CDAD58700646F66 /* GWSearchInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSearchInfoModel.h; sourceTree = "<group>"; };
+		8D3285B71CDAD58700646F66 /* GWSearchInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSearchInfoModel.m; sourceTree = "<group>"; };
+		8D3285B91CDAD9F300646F66 /* GWSearchAuthorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSearchAuthorModel.h; sourceTree = "<group>"; };
+		8D3285BA1CDAD9F300646F66 /* GWSearchAuthorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSearchAuthorModel.m; sourceTree = "<group>"; };
+		8D3285BC1CDADBAB00646F66 /* GWSearchContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSearchContentCell.h; sourceTree = "<group>"; };
+		8D3285BD1CDADBAB00646F66 /* GWSearchContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSearchContentCell.m; sourceTree = "<group>"; };
+		8D3285BE1CDADBAB00646F66 /* GWSearchContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWSearchContentCell.xib; sourceTree = "<group>"; };
+		8D3285C21CDADBDE00646F66 /* icon_user_time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_user_time@2x.png"; sourceTree = "<group>"; };
+		8D3285C31CDADBDE00646F66 /* icon_user_time@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_user_time@3x.png"; sourceTree = "<group>"; };
+		8D3285C61CDADFB700646F66 /* GWSearchAuthorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSearchAuthorCell.h; sourceTree = "<group>"; };
+		8D3285C71CDADFB700646F66 /* GWSearchAuthorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSearchAuthorCell.m; sourceTree = "<group>"; };
+		8D3285C81CDADFB700646F66 /* GWSearchAuthorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWSearchAuthorCell.xib; sourceTree = "<group>"; };
+		8D3285CB1CDAF25000646F66 /* pic_30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_30@2x.png"; sourceTree = "<group>"; };
+		8D3285CC1CDAF25000646F66 /* pic_30@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_30@3x.png"; sourceTree = "<group>"; };
+		8D3285CF1CDB162A00646F66 /* GWSearchSectionHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSearchSectionHeaderCell.h; sourceTree = "<group>"; };
+		8D3285D01CDB162A00646F66 /* GWSearchSectionHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSearchSectionHeaderCell.m; sourceTree = "<group>"; };
+		8D3285D11CDB162A00646F66 /* GWSearchSectionHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWSearchSectionHeaderCell.xib; sourceTree = "<group>"; };
 		8DE0480C1CD9E67300BD8CDD /* GWSubjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWSubjectModel.h; path = MuZhiHeNan/HotNews/Views/GWSubjectModel.h; sourceTree = SOURCE_ROOT; };
 		8DE0480D1CD9E67300BD8CDD /* GWSubjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWSubjectModel.m; path = MuZhiHeNan/HotNews/Views/GWSubjectModel.m; sourceTree = SOURCE_ROOT; };
 		8DE0480F1CD9ED9400BD8CDD /* GWSubjectHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSubjectHeaderCell.h; sourceTree = "<group>"; };
@@ -646,6 +675,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D3285B21CDAD54000646F66 /* 搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				8D3285B51CDAD56500646F66 /* Controllers */,
+				8D3285B41CDAD55D00646F66 /* Models */,
+				8D3285B31CDAD55600646F66 /* Views */,
+			);
+			name = "搜索";
+			sourceTree = "<group>";
+		};
+		8D3285B31CDAD55600646F66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D3285C61CDADFB700646F66 /* GWSearchAuthorCell.h */,
+				8D3285C71CDADFB700646F66 /* GWSearchAuthorCell.m */,
+				8D3285C81CDADFB700646F66 /* GWSearchAuthorCell.xib */,
+				8D3285BC1CDADBAB00646F66 /* GWSearchContentCell.h */,
+				8D3285BD1CDADBAB00646F66 /* GWSearchContentCell.m */,
+				8D3285BE1CDADBAB00646F66 /* GWSearchContentCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8D3285B41CDAD55D00646F66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D3285B61CDAD58700646F66 /* GWSearchInfoModel.h */,
+				8D3285B71CDAD58700646F66 /* GWSearchInfoModel.m */,
+				8D3285B91CDAD9F300646F66 /* GWSearchAuthorModel.h */,
+				8D3285BA1CDAD9F300646F66 /* GWSearchAuthorModel.m */,
+				8D3285CF1CDB162A00646F66 /* GWSearchSectionHeaderCell.h */,
+				8D3285D01CDB162A00646F66 /* GWSearchSectionHeaderCell.m */,
+				8D3285D11CDB162A00646F66 /* GWSearchSectionHeaderCell.xib */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8D3285B51CDAD56500646F66 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C42BFA981CDA402F007D3434 /* GWSearchViewController.h */,
+				C42BFA991CDA402F007D3434 /* GWSearchViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8D3285C11CDADBD500646F66 /* 搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				8D3285CB1CDAF25000646F66 /* pic_30@2x.png */,
+				8D3285CC1CDAF25000646F66 /* pic_30@3x.png */,
+				8D3285C21CDADBDE00646F66 /* icon_user_time@2x.png */,
+				8D3285C31CDADBDE00646F66 /* icon_user_time@3x.png */,
+			);
+			name = "搜索";
+			sourceTree = "<group>";
+		};
 		C401A5251CD5AC44004A55FC /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -1007,8 +1093,6 @@
 				8DFCF4F61CD6F181006B046B /* GWHomeViewController.m */,
 				8D275FAD1CD9C68800248292 /* GWCategoryListViewController.h */,
 				8D275FAE1CD9C68800248292 /* GWCategoryListViewController.m */,
-				C42BFA981CDA402F007D3434 /* GWSearchViewController.h */,
-				C42BFA991CDA402F007D3434 /* GWSearchViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1143,6 +1227,7 @@
 		C417334F1CC91D99000BBBD8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8D3285B21CDAD54000646F66 /* 搜索 */,
 				C401A6811CD5B5BD004A55FC /* Models */,
 				C401A67F1CD5B5AB004A55FC /* Views */,
 				C401A67B1CD5B582004A55FC /* ViewControllers */,
@@ -1200,6 +1285,7 @@
 		C41733531CC91EE9000BBBD8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8D3285C11CDADBD500646F66 /* 搜索 */,
 				C420CC491CD795E000E2E0C7 /* 新闻详情 */,
 				8DFCF50E1CD72EE9006B046B /* biaoqian_01@2x.png */,
 				8DFCF50F1CD72EE9006B046B /* biaoqian_01@3x.png */,
@@ -1634,6 +1720,7 @@
 				C41733B81CC92F88000BBBD8 /* theme_red.bundle in Resources */,
 				C42BFA901CDA2AC1007D3434 /* btn_top_fanhui@2x.png in Resources */,
 				8DFCF5191CD7417D006B046B /* GWAdNewsCell.xib in Resources */,
+				8D3285CE1CDAF25000646F66 /* pic_30@3x.png in Resources */,
 				C420CC6D1CD7969A00E2E0C7 /* tab_shoucang_h@3x.png in Resources */,
 				C420CC4E1CD795F000E2E0C7 /* details_left@2x.png in Resources */,
 				C420CC481CD794A100E2E0C7 /* GWNewsDesCell.xib in Resources */,
@@ -1646,6 +1733,9 @@
 				C41733BE1CC92F91000BBBD8 /* theme_dark.bundle in Resources */,
 				8DE0481E1CD9F91C00BD8CDD /* btn_zhuanti01@2x.png in Resources */,
 				C420CC541CD7962600E2E0C7 /* fanhui@2x.png in Resources */,
+				8D3285C01CDADBAB00646F66 /* GWSearchContentCell.xib in Resources */,
+				8D3285CD1CDAF25000646F66 /* pic_30@2x.png in Resources */,
+				8D3285CA1CDADFB700646F66 /* GWSearchAuthorCell.xib in Resources */,
 				C42BFA8D1CDA25FB007D3434 /* fanhui_top@3x.png in Resources */,
 				C401A6301CD5ACBD004A55FC /* ProgressHUD.bundle in Resources */,
 				C401A6AC1CD5C6CE004A55FC /* placeholderImage3x.png in Resources */,
@@ -1664,6 +1754,7 @@
 				C41733C01CC92F97000BBBD8 /* theme_pink.bundle in Resources */,
 				C420CC751CD7969A00E2E0C7 /* tab_zihao@3x.png in Resources */,
 				C420CC681CD7969A00E2E0C7 /* tab_fenxiang@2x.png in Resources */,
+				8D3285C41CDADBDE00646F66 /* icon_user_time@2x.png in Resources */,
 				C42BFA951CDA3EB3007D3434 /* ExploreSearchButton.png in Resources */,
 				C420CC6B1CD7969A00E2E0C7 /* tab_pinglun@3x.png in Resources */,
 				C4FEC3C11CD5FA88003763F3 /* GWCategoryHeaderReusableView.xib in Resources */,
@@ -1671,12 +1762,14 @@
 				C470383C1CC85E3000DC5ED2 /* Assets.xcassets in Resources */,
 				C401A6A31CD5C497004A55FC /* home_logo01@3x.png in Resources */,
 				C4617A3D1CD61A2F00DF1D74 /* NormalGrayIcon@3x.png in Resources */,
+				8D3285C51CDADBDE00646F66 /* icon_user_time@3x.png in Resources */,
 				C420CC661CD7969A00E2E0C7 /* tab_fanhui@2x.png in Resources */,
 				C420CC741CD7969A00E2E0C7 /* tab_zihao@2x.png in Resources */,
 				C41733B91CC92F88000BBBD8 /* theme_spring.bundle in Resources */,
 				C420CC731CD7969A00E2E0C7 /* tab_zan@3x.png in Resources */,
 				C4617A671CD64C2C00DF1D74 /* home_yuedu@2x.png in Resources */,
 				C4617A3B1CD61A2900DF1D74 /* NormalGrayIcon@2x.png in Resources */,
+				8D3285D31CDB162A00646F66 /* GWSearchSectionHeaderCell.xib in Resources */,
 				C41733BA1CC92F88000BBBD8 /* ZUIResources.bundle in Resources */,
 				C420CC791CD796D500E2E0C7 /* xian@3x.png in Resources */,
 				8DE048131CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib in Resources */,
@@ -1716,6 +1809,7 @@
 				C401A6761CD5B534004A55FC /* NSObject+MJClass.m in Sources */,
 				C401A5621CD5AC44004A55FC /* UIScrollView+MJExtension.m in Sources */,
 				C401A6251CD5ACA7004A55FC /* UIButton+WebCache.m in Sources */,
+				8D3285C91CDADFB700646F66 /* GWSearchAuthorCell.m in Sources */,
 				C401A5F81CD5AC8F004A55FC /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				C401A5E61CD5AC7F004A55FC /* DTConstants.m in Sources */,
 				C42BFA9A1CDA402F007D3434 /* GWSearchViewController.m in Sources */,
@@ -1746,8 +1840,10 @@
 				C401A6231CD5ACA7004A55FC /* SDWebImageManager.m in Sources */,
 				C401A5571CD5AC44004A55FC /* MJRefreshAutoGifFooter.m in Sources */,
 				C401A5591CD5AC44004A55FC /* MJRefreshAutoStateFooter.m in Sources */,
+				8D3285D21CDB162A00646F66 /* GWSearchSectionHeaderCell.m in Sources */,
 				C401A5991CD5AC56004A55FC /* AFHTTPRequestOperation.m in Sources */,
 				8D0EF7241CCDEC3800C8EFC0 /* GWNavigationController.m in Sources */,
+				8D3285BB1CDAD9F300646F66 /* GWSearchAuthorModel.m in Sources */,
 				C401A59A1CD5AC56004A55FC /* AFHTTPRequestOperationManager.m in Sources */,
 				C4617A641CD649C400DF1D74 /* GWNewStyleOneCell.m in Sources */,
 				C401A6241CD5ACA7004A55FC /* SDWebImagePrefetcher.m in Sources */,
@@ -1769,6 +1865,7 @@
 				C420CC471CD794A100E2E0C7 /* GWNewsDesCell.m in Sources */,
 				C401A5CE1CD5AC78004A55FC /* IQTextView.m in Sources */,
 				C41733AC1CC9242F000BBBD8 /* GWAppViewController.m in Sources */,
+				8D3285BF1CDADBAB00646F66 /* GWSearchContentCell.m in Sources */,
 				8D0EF7271CCDF55300C8EFC0 /* GWBaseViewController.m in Sources */,
 				C401A6261CD5ACA7004A55FC /* UIImage+GIF.m in Sources */,
 				C4617A5B1CD6238700DF1D74 /* TAAnimatedDotView.m in Sources */,
@@ -1860,6 +1957,7 @@
 				C423A6061CD608DF00E637A9 /* UIColor+ColorTransform.m in Sources */,
 				8DFCF5141CD73F3E006B046B /* GWAdNewsHeaderCell.m in Sources */,
 				8DE0480E1CD9E67300BD8CDD /* GWSubjectModel.m in Sources */,
+				8D3285B81CDAD58700646F66 /* GWSearchInfoModel.m in Sources */,
 				8DE0481B1CD9F5A100BD8CDD /* GWSubjectDesView.m in Sources */,
 				C41733851CC91F31000BBBD8 /* NSDictionary+LYAdd.m in Sources */,
 				C401A6211CD5ACA7004A55FC /* SDWebImageDownloader.m in Sources */,
