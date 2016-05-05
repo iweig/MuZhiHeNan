@@ -73,7 +73,7 @@
 {
     self.navigationItem.title = @"热点";
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenSize.width, kScreenSize.height - 64 - 44)];
     [tableView registerNib:[UINib nibWithNibName:@"GWNewStyleOneCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GWNewStyleOneCell"];
     [tableView registerNib:[UINib nibWithNibName:@"GWNewsHeaderCell" bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"GWNewsHeaderCell"];
     [tableView registerNib:[UINib nibWithNibName:@"GWNewsStyleTwoCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GWNewsStyleTwoCell"];

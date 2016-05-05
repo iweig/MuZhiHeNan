@@ -9,6 +9,9 @@
 #import "GWNewsContentCell.h"
 
 @interface GWNewsContentCell () <UIWebViewDelegate>
+{
+    NSUInteger _percent;
+}
 
 @property (nonatomic, strong) UIWebView *webView;
 @property (nonatomic, assign) CGFloat height;
@@ -17,6 +20,10 @@
 
 @implementation GWNewsContentCell
 
+- (void)awakeFromNib
+{
+    _percent = -1;
+}
 
 - (void)setModel:(GWNewsDetailModel *)model
 {
@@ -30,6 +37,7 @@
     [self addSubview:webView];
     self.webView = webView;
 }
+
 
 #pragma mark -UIWebViewDelegate
 - (void)webViewDidFinishLoad:(UIWebView *)webView

@@ -27,6 +27,12 @@
 //新闻详情
 #define kGetNewsDetail @"/v1/content/getnewsbyid"
 
+//收藏
+#define kAddfavourite @"/v1/content/addfavourite"
+
+//点赞
+#define kDianzan @"/v1/content/support"
+
 #define kSearch @"/v1/content/search1"
 
 #endif /* NetworkConf_h */

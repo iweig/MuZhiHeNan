@@ -47,7 +47,7 @@
 
 - (void)setupUI
 {
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenSize.width, kScreenSize.height - 64)];
     tableView.dataSource = self;
     tableView.delegate = self;
     [tableView registerNib:[UINib nibWithNibName:@"GWNewStyleOneCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GWNewStyleOneCell"];

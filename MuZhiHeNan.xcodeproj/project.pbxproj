@@ -30,6 +30,8 @@
 		8D3285CE1CDAF25000646F66 /* pic_30@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3285CC1CDAF25000646F66 /* pic_30@3x.png */; };
 		8D3285D21CDB162A00646F66 /* GWSearchSectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3285D01CDB162A00646F66 /* GWSearchSectionHeaderCell.m */; };
 		8D3285D31CDB162A00646F66 /* GWSearchSectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3285D11CDB162A00646F66 /* GWSearchSectionHeaderCell.xib */; };
+		8D3285D61CDB27BA00646F66 /* GWHotNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3285D41CDB27BA00646F66 /* GWHotNewsViewController.m */; };
+		8D3285D81CDB35E100646F66 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3285D71CDB35E100646F66 /* Social.framework */; };
 		8DE0480E1CD9E67300BD8CDD /* GWSubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE0480D1CD9E67300BD8CDD /* GWSubjectModel.m */; };
 		8DE048121CD9ED9400BD8CDD /* GWSubjectHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE048101CD9ED9400BD8CDD /* GWSubjectHeaderCell.m */; };
 		8DE048131CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE048111CD9ED9400BD8CDD /* GWSubjectHeaderCell.xib */; };
@@ -171,7 +173,6 @@
 		C41733901CC91F31000BBBD8 /* UIImage+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417337C1CC91F31000BBBD8 /* UIImage+LYAdd.m */; };
 		C41733911CC91F31000BBBD8 /* UITextField+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C417337E1CC91F31000BBBD8 /* UITextField+LYAdd.m */; };
 		C41733921CC91F31000BBBD8 /* UIView+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733801CC91F31000BBBD8 /* UIView+LYAdd.m */; };
-		C41733A41CC9240C000BBBD8 /* GWHotNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733A31CC9240C000BBBD8 /* GWHotNewsViewController.m */; };
 		C41733A81CC9241F000BBBD8 /* GWMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733A61CC9241F000BBBD8 /* GWMeViewController.m */; };
 		C41733AC1CC9242F000BBBD8 /* GWAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733AB1CC9242F000BBBD8 /* GWAppViewController.m */; };
 		C41733AF1CC9270B000BBBD8 /* GWTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C41733AE1CC9270B000BBBD8 /* GWTabBarManager.m */; };
@@ -285,6 +286,9 @@
 		8D3285CF1CDB162A00646F66 /* GWSearchSectionHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSearchSectionHeaderCell.h; sourceTree = "<group>"; };
 		8D3285D01CDB162A00646F66 /* GWSearchSectionHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSearchSectionHeaderCell.m; sourceTree = "<group>"; };
 		8D3285D11CDB162A00646F66 /* GWSearchSectionHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GWSearchSectionHeaderCell.xib; sourceTree = "<group>"; };
+		8D3285D41CDB27BA00646F66 /* GWHotNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWHotNewsViewController.m; path = MuZhiHeNan/HotNews/GWHotNewsViewController.m; sourceTree = SOURCE_ROOT; };
+		8D3285D51CDB27BA00646F66 /* GWHotNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWHotNewsViewController.h; path = MuZhiHeNan/HotNews/GWHotNewsViewController.h; sourceTree = SOURCE_ROOT; };
+		8D3285D71CDB35E100646F66 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8DE0480C1CD9E67300BD8CDD /* GWSubjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GWSubjectModel.h; path = MuZhiHeNan/HotNews/Views/GWSubjectModel.h; sourceTree = SOURCE_ROOT; };
 		8DE0480D1CD9E67300BD8CDD /* GWSubjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GWSubjectModel.m; path = MuZhiHeNan/HotNews/Views/GWSubjectModel.m; sourceTree = SOURCE_ROOT; };
 		8DE0480F1CD9ED9400BD8CDD /* GWSubjectHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSubjectHeaderCell.h; sourceTree = "<group>"; };
@@ -563,8 +567,6 @@
 		C417337E1CC91F31000BBBD8 /* UITextField+LYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LYAdd.m"; sourceTree = "<group>"; };
 		C417337F1CC91F31000BBBD8 /* UIView+LYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYAdd.h"; sourceTree = "<group>"; };
 		C41733801CC91F31000BBBD8 /* UIView+LYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYAdd.m"; sourceTree = "<group>"; };
-		C41733A21CC9240C000BBBD8 /* GWHotNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWHotNewsViewController.h; sourceTree = "<group>"; };
-		C41733A31CC9240C000BBBD8 /* GWHotNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWHotNewsViewController.m; sourceTree = "<group>"; };
 		C41733A51CC9241F000BBBD8 /* GWMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWMeViewController.h; sourceTree = "<group>"; };
 		C41733A61CC9241F000BBBD8 /* GWMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWMeViewController.m; sourceTree = "<group>"; };
 		C41733AA1CC9242F000BBBD8 /* GWAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWAppViewController.h; sourceTree = "<group>"; };
@@ -669,6 +671,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3285D81CDB35E100646F66 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1107,6 +1110,8 @@
 		C401A67D1CD5B5A0004A55FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D3285D41CDB27BA00646F66 /* GWHotNewsViewController.m */,
+				8D3285D51CDB27BA00646F66 /* GWHotNewsViewController.h */,
 				8D275FB51CD9E06200248292 /* GWSubjectViewController.h */,
 				8D275FB61CD9E06200248292 /* GWSubjectViewController.m */,
 			);
@@ -1242,8 +1247,6 @@
 				C401A6821CD5B5C0004A55FC /* Models */,
 				C401A67E1CD5B5A8004A55FC /* Views */,
 				C401A67D1CD5B5A0004A55FC /* ViewControllers */,
-				C41733A21CC9240C000BBBD8 /* GWHotNewsViewController.h */,
-				C41733A31CC9240C000BBBD8 /* GWHotNewsViewController.m */,
 			);
 			path = HotNews;
 			sourceTree = "<group>";
@@ -1609,6 +1612,7 @@
 		C47038231CC85E2F00DC5ED2 = {
 			isa = PBXGroup;
 			children = (
+				8D3285D71CDB35E100646F66 /* Social.framework */,
 				C470382E1CC85E3000DC5ED2 /* MuZhiHeNan */,
 				C470382D1CC85E3000DC5ED2 /* Products */,
 			);
@@ -1893,6 +1897,7 @@
 				C41733AF1CC9270B000BBBD8 /* GWTabBarManager.m in Sources */,
 				C401A5D01CD5AC78004A55FC /* IQTitleBarButtonItem.m in Sources */,
 				8D264E6D1CD83BAD00EDDD53 /* GWNewsDetailModel.m in Sources */,
+				8D3285D61CDB27BA00646F66 /* GWHotNewsViewController.m in Sources */,
 				C41733811CC91F31000BBBD8 /* NSArray+LYAdd.m in Sources */,
 				C401A55C1CD5AC44004A55FC /* MJRefreshBackStateFooter.m in Sources */,
 				C401A5CD1CD5AC78004A55FC /* IQKeyboardReturnKeyHandler.m in Sources */,
@@ -1907,7 +1912,6 @@
 				C41733A81CC9241F000BBBD8 /* GWMeViewController.m in Sources */,
 				C401A6591CD5AF84004A55FC /* HttpManager.m in Sources */,
 				C401A6721CD5B534004A55FC /* MJFoundation.m in Sources */,
-				C41733A41CC9240C000BBBD8 /* GWHotNewsViewController.m in Sources */,
 				C401A55A1CD5AC44004A55FC /* MJRefreshBackGifFooter.m in Sources */,
 				C401A59E1CD5AC56004A55FC /* AFURLConnectionOperation.m in Sources */,
 				C401A6281CD5ACA7004A55FC /* UIImage+WebP.m in Sources */,
